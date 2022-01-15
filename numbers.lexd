@@ -1,0 +1,46 @@
+PATTERNS
+One # 1
+Root SmallSuf # 2-9
+
+TenRoot SmallSuf # 10
+TenRoot TeenSuf OneRoot # 11
+TenRoot TeenSuf Root SmallSuf # 12-19
+
+Root TenSuf SmallSuf # 20-90
+Root TenSuf BigSuf Root SmallSuf # 22-99
+Root TenSuf BigSuf OneRoot # 21-91
+
+LEXICON OneRoot
+себ # один
+
+LEXICON One
+себ
+сей
+сев
+сер
+
+LEXICON Root
+чIе # два 
+лъоб # три
+бокьо #четыре тут должен быть апостроф 
+инщду # пять
+онлIи # шесть 
+гьокьу # семь 
+бийкьи # восемь в речи мужчин
+бейкьи # восемь в речи женщин
+гьочIо # девять
+
+LEXICON TenRoot
+гьоцIо # десять
+
+LEXICON SmallSuf
+<*1>:гу
+
+LEXICON TeenSuf
+<+10>:лIи
+
+LEXICON TenSuf
+<*10>:цIол
+
+LEXICON BigSuf
+<*10+>:логу
