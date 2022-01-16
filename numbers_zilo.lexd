@@ -1,0 +1,71 @@
+# в корнях для 1 и 4 есть классные показатели - они есть в любом случае (типа 41) или только в 1 и 4?
+# сейчас сделано так, что оно изменяется везде
+
+PATTERNS
+# One 
+# OneDigit
+# Teens
+# Round
+DoubleDigits
+# Hundreds
+
+PATTERN One
+WeirdRoot[1] Class
+
+PATTERN Four
+Class WeirdRoot[4]
+
+PATTERN OneDigit
+(Root | Four) Num 
+
+PATTERN Teens # 12-19
+Root[10] Link1 ( ((Root2[-10] | Four) Num) | (One) )
+     
+PATTERN Round # 20-90
+(Root[-10] | Four) Ten Num
+
+PATTERN DoubleDigits # 20-99 -Round
+(Root[-10] | Four) Ten Link2 ( ((Root2[-10] | Four) Num) | (One) )
+
+PATTERN Hundreds
+(Root2[-10] BigRoot[100])? (DoubleDigits | Teens | Round)?
+
+
+LEXICON Root
+č’e[2] # 2 
+ɬob # 3
+ĩšdu # 5
+ojƛi # 6
+hoƛ’u # 7
+bejƛ’i # 8 
+hoč’o # 9
+hoc’o[10] # 10
+
+ALIAS Root Root2
+
+LEXICON BigRoot
+bešenu[100] # 100
+ozuru[1000] # 1000
+
+LEXICON WeirdRoot
+se[1] # 1
+oʔo[4] # 4
+
+LEXICON Class
+<cl>:w
+<cl>:j
+<cl>:b
+<cl>:r
+
+LEXICON Num
+<num>:gu
+
+LEXICON Link1
+<link>:ɬij 
+
+LEXICON Ten
+<ten>:c’ol
+
+LEXICON Link2
+<link>:loj
+
