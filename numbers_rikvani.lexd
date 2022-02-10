@@ -1,0 +1,60 @@
+PATTERNS
+One
+OneDigit
+Teen
+Round
+RoundAnd
+
+PATTERN One # тут еще указано множественное число
+WeirdRoot[1] Class Dialect
+
+PATTERN Four
+Class WeirdRoot[4]
+
+PATTERN OneDigit
+(Root | Four) Num Dialect
+
+PATTERN Teen
+Root[10] Link1 Dialect
+
+PATTERN Round # 20-90
+(Root[-10] | Four) Ten Num Dialect
+
+PATTERN RoundAnd
+(Root[-10] | Four) Ten Link2 Dialect
+
+
+LEXICON WeirdRoot
+се[1] # 1
+окъгъо[4] # 4 - несовпадение
+
+LEXICON Class
+<cl>:в
+<cl>:й
+<cl>:б
+<cl>:р
+
+LEXICON Root
+чІе # 2 
+лъоб # 3
+ъинищду # 5  - несовпадение тут должна быть назализация
+ъонилIг # 6 - несовпадение тут должна быть назализация
+гьокьу # 7
+бейкь # 8 - несовпадение 
+гьочІо # 9
+гьоцІо[10] # 10
+
+LEXICON Num
+<num>:гу
+
+LEXICON Link1
+<link>:лІ # - несовпадение
+
+LEXICON Ten
+<ten>:цІол
+
+LEXICON Link2
+<link>:ло # - несовпадение
+
+LEXICON Dialect
+<rikvani>:

@@ -1,71 +1,60 @@
-# в корнях для 1 и 4 есть классные показатели - они есть в любом случае (типа 41) или только в 1 и 4?
-# сейчас сделано так, что оно изменяется везде
-
 PATTERNS
-# One 
-# OneDigit
-# Teens
-# Round
-DoubleDigits
-# Hundreds
+One 
+OneDigit
+Teen
+Round
+RoundAnd
 
 PATTERN One
-WeirdRoot[1] Class
+WeirdRoot[1] Class Dialect
 
 PATTERN Four
 Class WeirdRoot[4]
 
 PATTERN OneDigit
-(Root | Four) Num 
+(Root | Four) Num Dialect
 
-PATTERN Teens # 12-19
-Root[10] Link1 ( ((Root2[-10] | Four) Num) | (One) )
+PATTERN Teen
+Root[10] Link1 Dialect
      
 PATTERN Round # 20-90
-(Root[-10] | Four) Ten Num
+(Root[-10] | Four) Ten Num Dialect
 
-PATTERN DoubleDigits # 20-99 -Round
-(Root[-10] | Four) Ten Link2 ( ((Root2[-10] | Four) Num) | (One) )
-
-PATTERN Hundreds
-(Root2[-10] BigRoot[100])? (DoubleDigits | Teens | Round)?
+PATTERN RoundAnd 
+(Root[-10] | Four) Ten Link2 Dialect
 
 
 LEXICON Root
-č’e[2] # 2 
-ɬob # 3
-ĩšdu # 5
-ojƛi # 6
-hoƛ’u # 7
-bejƛ’i # 8 
-hoč’o # 9
-hoc’o[10] # 10
-
-ALIAS Root Root2
-
-LEXICON BigRoot
-bešenu[100] # 100
-ozuru[1000] # 1000
+чIе # 2 
+лъоб # 3
+ĩшду # 5 - несовпадение
+ojƛi # 6 - несовпадение
+hoƛ’u # 7 - несовпадение?
+bejƛ’i # 8 - несовпадение?
+гьочIо # 9
+гьоцIо[10] # 10
 
 LEXICON WeirdRoot
-se[1] # 1
-oʔo[4] # 4
+се[1] # 1
+оъо[4] # 4 - несовпадение
 
 LEXICON Class
-<cl>:w
-<cl>:j
-<cl>:b
-<cl>:r
+<cl>:в
+<cl>:й
+<cl>:б
+<cl>:р
 
 LEXICON Num
-<num>:gu
+<num>:гу
 
 LEXICON Link1
-<link>:ɬij 
+<link>:лъий # - несовпадение
 
 LEXICON Ten
-<ten>:c’ol
+<ten>:цIол
 
 LEXICON Link2
-<link>:loj
+<link>:лой # - несовпадение
 
+LEXICON Dialect
+<zilo>:
