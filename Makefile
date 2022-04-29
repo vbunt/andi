@@ -1,41 +1,19 @@
-.DEFAULT_GOAL := numbers.analyzer.hfst
+.DEFAULT_GOAL := test.clean
 
-# generate generators for all dialects
-numbers_gagatli.generator.hfst: numbers_gagatli.lexd
+nouns.generator.hfst: nouns.lexd
 	lexd $< | hfst-txt2fst -o $@
 
-numbers_zilo.generator.hfst: numbers_zilo.lexd
-	lexd $< | hfst-txt2fst -o $@
-
-numbers_rikvani.generator.hfst: numbers_rikvani.lexd
-	lexd $< | hfst-txt2fst -o $@
-
-# compose generators into one
-
-numbers.generator.hfst: numbers_gz.generator.hfst numbers_rikvani.generator.hfst
-	hfst-disjunct $^ -o $@
-
-numbers_gz.generator.hfst: numbers_gagatli.generator.hfst numbers_zilo.generator.hfst
-	hfst-disjunct $^ -o $@
-
-# generate analizer
-numbers.analyzer.hfst: numbers.generator.hfst
+nouns.analyzer.hfst: nouns.generator.hfst
 	hfst-invert $< -o $@
 
-# generate transliteraters
-la2cy.transliterater.hfst: cy2la.transliterater.hfst
-	hfst-invert $< -o $@
-cy2la.transliterater.hfst: correspondence.hfst
-	hfst-repeat -f 1 $< -o $@
-correspondence.hfst: correspondence
-	hfst-strings2fst -j correspondence -o $@
+test.pass.txt: tests.csv
+	awk -F, '$$3 == "pass" {print $$1 ":" $$2}' $^ | sort -u > $@
+check: nouns.generator.hfst test.pass.txt
+	bash compare.sh $< test.pass.txt
 
-# generate analizer and generator for transcription
-numbers.analyzer.tr.hfst: numbers.generator.tr.hfst
-	hfst-invert $< -o $@
-numbers.generator.tr.hfst: numbers.generator.hfst cy2la.transliterater.hfst
-	hfst-compose $^ -o $@
+test.clean: check
+	rm test.*
 
-# remove all hfst files
 clean:
 	rm *.hfst
+

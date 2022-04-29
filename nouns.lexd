@@ -1,0 +1,154 @@
+PATTERNS
+AbsSg
+OblSg
+AbsPl
+OblPl
+
+PATTERN AbsSg # абсолютив единственного
+AbsSgLex AbsSgSuf
+
+PATTERN OblSg # косвенные падежи единственного
+OblSgLex OblSgSuf Case[-pl]
+GenitiveSg
+AffectiveSg
+
+PATTERN GenitiveSg # генитив единственного
+OblSgLex[1] OblSgSuf Class Gen
+OblSgLex[-1] OblSgSuf Case[gen]
+
+PATTERN AffectiveSg # аффектив единственного
+OblSgLex OblSgSuf Class Case[aff]
+
+
+PATTERN AbsPl
+AbsPlLex[-il] AbsPlSuf[-il]
+AbsPlLex[il] AbsPlSuf[il]
+
+PATTERN OblPl
+OblPlLex OblPlSuf Case[-sg]
+GenitivePl
+AffectivePl
+
+PATTERN GenitivePl # генитив множественного
+OblPlLex[1] OblPlSuf Class Gen
+OblPlLex[-1] OblPlSuf Case[gen]
+
+PATTERN AffectivePl # аффектив множественного
+OblPlLex OblPlSuf Class Case[aff]
+
+
+LEXICON Case
+<erg>:ди
+<dat>:й
+<dat>:лъу
+<dat>:лълъий
+<gen>:лІи[gen]
+<gen>:лІол[gen]
+<aff>:о[aff]
+<ins>:хьхи
+<sub>:кьи
+<sub><el>:кьикку
+<sup.ess>:ла
+<sup.lat>:ло
+<sup><el>:лакку
+<in.ess>:ла[sg]
+<ess>:у[sg]
+<in.lat>:ло[sg]
+<lat>:ди[sg]
+<in><el>:лакку[sg]
+<inter>:лIи
+<inter><el>:лIикку
+<apud.ess>:ха
+<apud.lat>:хо
+<apud><el>:хакку
+<cont>:чIу
+<cont><el>:чIукку
+<loc>:хъи[pl]
+<loc>:хъи[pl]
+<loc><el>:хъикку[pl]
+<in>:у[sg]
+<in>:у[sg]
+<in><el>:укку[sg]
+
+
+LEXICON AbsSgSuf
+<abs.sg>:
+
+LEXICON OblSgSuf
+<obl.sg>:
+
+LEXICON OblPlSuf
+<obl.pl>:
+
+LEXICON AbsPlSuf
+<abs.pl>:л
+<abs.pl>:ил[il]
+
+LEXICON Gen
+<gen>:ул
+<gen>:ил
+<gen>:
+
+LEXICON Class
+<cl>:в[1]
+<cl>:й[2]
+<cl>:б[3]
+<cl>:р[4]
+
+
+LEXICON AbsSgLex
+мийар
+гьонно
+гьаркІу
+ниду
+ленссиб
+гьантІикІа
+рижи
+гворзу
+магьар
+хороша
+кІоту
+
+
+LEXICON OblSgLex
+мийар:мийар[4]
+гьонно:гьонноло[4]
+гьаркІу:гьаркІуло[5]
+ниду:нидуло[5]
+ленссиб:ленссиб[5]
+гьантІикІа:гьантІикІу[5]
+рижи:рижило[5]
+гворзу:гворзуло[5]
+магьар:магьар[5]
+хороша:хорош[1]
+кІоту:кІоту[3]
+
+
+LEXICON AbsPlLex
+мийар:мийарду
+гьонно:гьонно
+гьонно:гьонноби
+гьаркІу:гьаркІуоби
+ниду:нидоби
+ленссиб:ленссибо
+гьантІикІа:гьантІикІоби
+рижи:рижобду
+гворзу:гворзоби
+магьар:магьарду
+кІоту:кІот[il]
+
+
+LEXICON OblPlLex
+мийар:мийарду
+гьонно:гьонно
+гьонно:гьонноби
+гьаркІу:гьаркІуоби
+ниду:нидоби
+ленссиб:ленссибо
+гьантІикІа:гьантІикІоби
+рижи:рижобда
+гворзу:гворзоби
+магьар:магьарду
+кІоту:кІотили
+
+
