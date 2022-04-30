@@ -1,0 +1,32 @@
+PATTERNS
+ClassPrefix
+NoClasses
+
+PATTERN NoClasses
+LexNoClasses
+
+PATTERN ClassPrefix
+Affix[1] Stem[1]
+Affix[2] Stem[2]
+Affix[3] Stem[3]
+Affix[4] Stem[4]
+
+LEXICON Affix
+<cl>[1]:в
+<cl>[2]:й
+<cl>[3]:б
+<cl>[4]:р
+
+LEXICON Stem
+охуду[1]
+ехуду[2,3,4]
+окьу[1,2,3,4]
+угьолгу[1]
+игьолгу[2]
+игьоглу[3,4]
+игьугу[1,2,3,4]
+
+LEXICON LexNoClasses
+гьила
+гьикьу
+сседу
