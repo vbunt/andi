@@ -5,36 +5,36 @@ AbsPl
 OblPl
 
 PATTERN AbsSg # абсолютив единственного
-AbsSgLex AbsSgSuf
+AbsSgLex [<n>:] AbsSgSuf
 
 PATTERN OblSg # косвенные падежи единственного
-OblSgLex OblSgSuf Case[-pl]
+OblSgLex [<n>:] OblSgSuf Case[-pl,-gen,-aff]
 GenitiveSg
 AffectiveSg
 
 PATTERN GenitiveSg # генитив единственного
-OblSgLex[1] OblSgSuf Class Gen
-OblSgLex[-1] OblSgSuf Case[gen]
+OblSgLex[1] [<n>:] OblSgSuf Class Gen
+OblSgLex[-1] [<n>:] OblSgSuf Case[gen]
 
 PATTERN AffectiveSg # аффектив единственного
-OblSgLex OblSgSuf Class Case[aff]
+OblSgLex [<n>:] OblSgSuf Class Case[aff]
 
 
 PATTERN AbsPl
-AbsPlLex[-il] AbsPlSuf[-il]
-AbsPlLex[il] AbsPlSuf[il]
+AbsPlLex[-il] [<n>:] AbsPlSuf[-il]
+AbsPlLex[il] [<n>:] AbsPlSuf[il]
 
 PATTERN OblPl
-OblPlLex OblPlSuf Case[-sg]
+OblPlLex [<n>:] OblPlSuf Case[-sg]
 GenitivePl
 AffectivePl
 
 PATTERN GenitivePl # генитив множественного
-OblPlLex[1] OblPlSuf Class Gen
-OblPlLex[-1] OblPlSuf Case[gen]
+OblPlLex[1] [<n>:] OblPlSuf Class Gen
+OblPlLex[-1] [<n>:] OblPlSuf Case[gen]
 
 PATTERN AffectivePl # аффектив множественного
-OblPlLex OblPlSuf Class Case[aff]
+OblPlLex [<n>:] OblPlSuf Class Case[aff]
 
 
 LEXICON Case

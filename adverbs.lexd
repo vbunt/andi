@@ -3,13 +3,13 @@ ClassPrefix
 NoClasses
 
 PATTERN NoClasses
-LexNoClasses
+LexNoClasses [<adv>:]
 
 PATTERN ClassPrefix
-Affix[1] Stem[1]
-Affix[2] Stem[2]
-Affix[3] Stem[3]
-Affix[4] Stem[4]
+Affix[1] Stem[1] [<adv>:]
+Affix[2] Stem[2] [<adv>:]
+Affix[3] Stem[3] [<adv>:]
+Affix[4] Stem[4] [<adv>:]
 
 LEXICON Affix
 <cl>[1]:в

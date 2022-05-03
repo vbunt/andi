@@ -1,6 +1,44 @@
 analysis,form,mustpass,source,page,description
-ниду<obl.pl><gen>,нидобилІи,pass,…,…,форма генитива
-ниду<obl.pl><gen>,нидобилІ,ignore,…,…,форма генитива
-ниду<obl.pl><gen>,нидобилІол,pass,…,…,форма генитива
-ниду<obl.pl><aff>,нидобио,pass,…,…,форма аффектива
-ниду<obl.pl><ins>,нидобихьхи,pass,…,…,форма инструменталиса
+мийар<n><abs.sg>,мийар,pass,…,…,абсолютив единственного
+мийар<n><obl.sg><erg>,мийарди,pass,…,…,эргатив единственного
+мийар<n><obl.sg><dat>,мийарй,pass,…,…,датив единственного
+мийар<n><obl.sg><dat>,мийарлълъий,pass,…,…,датив единственного
+мийар<n><obl.sg><dat>,мийарлъу,pass,…,…,датив единственного
+мийар<n><obl.sg><gen>,мийарлІол,pass,…,…,генитив единственного
+мийар<n><obl.sg><gen>,мийарлІи,pass,…,…,генитив единственного
+хороша<n><obl.sg><cl><gen>,хорошвул,pass,…,…,генитив единственного
+хороша<n><obl.sg><cl><gen>,хорошвил,pass,…,…,генитив единственного
+хороша<n><obl.sg><cl><gen>,хорошв,pass,…,…,генитив единственного
+хороша<n><obl.sg><cl><gen>,хорошйул,pass,…,…,генитив единственного
+хороша<n><obl.sg><cl><gen>,хорошйил,pass,…,…,генитив единственного
+хороша<n><obl.sg><cl><gen>,хорошй,pass,…,…,генитив единственного
+хороша<n><obl.sg><cl><gen>,хорошбул,pass,…,…,генитив единственного
+хороша<n><obl.sg><cl><gen>,хорошбил,pass,…,…,генитив единственного
+хороша<n><obl.sg><cl><gen>,хорошб,pass,…,…,генитив единственного
+хороша<n><obl.sg><cl><gen>,хорошрул,pass,…,…,генитив единственного
+хороша<n><obl.sg><cl><gen>,хорошрил,pass,…,…,генитив единственного
+хороша<n><obl.sg><cl><gen>,хорошр,pass,…,…,генитив единственного
+мийар<n><obl.sg><ins>,мийархьхи,pass,…,…,инструменталис единственного
+мийар<n><obl.sg><cl><aff>,мийарво,pass,…,…,аффектив единственного
+мийар<n><obl.sg><cl><aff>,мийарйо,pass,…,…,аффектив единственного
+мийар<n><obl.sg><cl><aff>,мийарбо,pass,…,…,аффектив единственного
+мийар<n><obl.sg><cl><aff>,мийарро,pass,…,…,аффектив единственного
+мийар<n><obl.sg><sub>,мийаркьи,pass,…,…,sub sg
+мийар<n><obl.sg><sub><el>,мийаркьикку,pass,…,…,sub elative sg
+мийар<n><obl.sg><sup.ess>,мийарла,pass,…,…,super essive sg
+мийар<n><obl.sg><sup.lat>,мийарло,pass,…,…,super lative sg
+мийар<n><obl.sg><sup><el>,мийарлакку,pass,…,…,super elative sg
+мийар<n><obl.sg><in.ess>,мийарла,pass,…,…,in essive sg
+мийар<n><obl.sg><ess>,мийару,pass,…,…,essive sg
+мийар<n><obl.sg><in.lat>,мийарло,pass,…,…,in lative sg
+мийар<n><obl.sg><lat>,мийарди,pass,…,…,lative sg
+мийар<n><obl.sg><in><el>,мийарлакку,pass,…,…,in elative sg
+мийар<n><obl.sg><inter>,мийарлIи,pass,…,…,inter (essive) sg
+мийар<n><obl.sg><inter><el>,мийарлIикку,pass,…,…,inter elative sg
+мийар<n><obl.sg><apud.ess>,мийарха,pass,…,…,apud essive sg
+мийар<n><obl.sg><apud.lat>,мийархо,pass,…,…,apud lative sg
+мийар<n><obl.sg><apud><el>,мийархакку,pass,…,…,apud elative sg
+мийар<n><obl.sg><cont>,мийарчIу,pass,…,…,cont (essive) sg
+мийар<n><obl.sg><cont><el>,мийарчIукку,pass,…,…,cont elative sg
+мийар<n><obl.sg><in>,мийару,pass,…,…,in (essive) sg
+мийар<n><obl.sg><in><el>,мийарукку,pass,…,…,in elative sg
