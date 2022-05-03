@@ -4,16 +4,16 @@ ClassInfix
 ClassPrefix
 
 PATTERN NoClasses
-NoClassesLex
+NoClassesLex [<adj>:]
 
 PATTERN ClassPrefix
-Affix[1] Stem[1]
-Affix[2] Stem[2]
-Affix[3] Stem[3]
-Affix[4] Stem[4]
+Affix[1] Stem[1] [<adj>:]
+Affix[2] Stem[2] [<adj>:]
+Affix[3] Stem[3] [<adj>:]
+Affix[4] Stem[4] [<adj>:]
 
 PATTERN ClassInfix
-InStem(1) Affix InStem(2)
+InStem(1) Affix InStem(2) [<adj>:]
 
 LEXICON NoClassesLex
 цакку
