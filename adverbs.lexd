@@ -3,7 +3,7 @@ ClassPrefix
 NoClasses
 
 PATTERN NoClasses
-LexNoClasses [<adv>:]
+NoClassesLex [<adv>:]
 
 PATTERN ClassPrefix
 Affix[1] Stem[1] [<adv>:]
@@ -26,7 +26,32 @@ LEXICON Stem
 игьоглу[3,4]
 игьугу[1,2,3,4]
 
-LEXICON LexNoClasses
-гьила
+LEXICON NoClassesLex
+амичІигу
+багъугьалла
+гьечІекъгидо
 гьикьу
+гьила
+гьиниᵸдилълъу
+гьину
+гьонолълъу
+гьуду
+гьулъу
+гьунудолълъу
+гьунулъолълъу
+желъал
+зологу
+къгвакьу
+къина
+кьина
+лІеру
+лело
+мигъулла
+мичІолгу
+охходдоро
+рейба
+сибира
 сседу
+сун
+ххеххи
+шела

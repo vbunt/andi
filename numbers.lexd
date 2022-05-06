@@ -1,46 +1,57 @@
 PATTERNS
-One # 1
-Root SmallSuf # 2-9
+One
+OneDigit
+Teen
+Round
+RoundAnd
 
-TenRoot SmallSuf # 10
-TenRoot TeenSuf OneRoot # 11
-TenRoot TeenSuf Root SmallSuf # 12-19
+PATTERN One
+ClassRoot[1] [<num>:] Class
 
-Root TenSuf SmallSuf # 20-90
-Root TenSuf BigSuf Root SmallSuf # 22-99
-Root TenSuf BigSuf OneRoot # 21-91
+PATTERN Four
+Class ClassRoot[4]
 
-LEXICON OneRoot
-себ # один
+PATTERN OneDigit
+(Root | Four) [<num>:] Card
 
-LEXICON One
-себ
-сей
-сев
-сер
+PATTERN Teen
+Root[10] [<num>:] Link1
+
+PATTERN Round
+(Root[-10] | Four) [<num>:] Ten Card 
+
+PATTERN RoundAnd
+(Root[-10] | Four) [<num>:] Ten Link2 
+
+
+LEXICON ClassRoot
+се[1] # 1
+окъго[4] # 4
+
+LEXICON Class
+<cl>:в
+<cl>:й
+<cl>:б
+<cl>:р
 
 LEXICON Root
-чIе # два 
-лъоб # три
-бокьо #четыре тут должен быть апостроф 
-инщду # пять
-онлIи # шесть 
-гьокьу # семь 
-бийкьи # восемь в речи мужчин
-бейкьи # восемь в речи женщин
-гьочIо # девять
+чІе # 2 
+лъоб # 3
+иншду # 5 
+онлІи # 6 
+гьокьу # 7
+бийкьи # 8
+гьочІо # 9
+гьоцІо[10] # 10
 
-LEXICON TenRoot
-гьоцIо # десять
+LEXICON Card
+<card>:гу
 
-LEXICON SmallSuf
-<*1>:гу
+LEXICON Link1
+<lnk>:лІи
 
-LEXICON TeenSuf
-<+10>:лIи
+LEXICON Ten
+<ten>:цІол
 
-LEXICON TenSuf
-<*10>:цIол
-
-LEXICON BigSuf
-<*10+>:логу
+LEXICON Link2
+<lnk>:ло

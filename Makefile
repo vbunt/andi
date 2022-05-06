@@ -4,20 +4,25 @@
 nouns.generator.hfst: nouns.lexd
 	lexd $< | hfst-txt2fst -o $@
 
-
 adjectives.generator.hfst: adjectives.lexd
 	lexd $< | hfst-txt2fst -o $@
 
-
 adverbs.generator.hfst: adverbs.lexd
 	lexd $< | hfst-txt2fst -o $@
+
+numbers.generator.hfst: numbers.lexd
+	lexd $< | hfst-txt2fst -o $@
+
 
 # тут их наверное как-то можно все сразу в один слепить
 # но я не настолько разобралась в командах для терминала :/
 nouns_and_adjectives.generator.hfst: nouns.generator.hfst adjectives.generator.hfst
 	hfst-disjunct $^ -o $@
 
-andi.generator.hfst: nouns_and_adjectives.generator.hfst adverbs.generator.hfst
+numbers_and_adverbs.generator.hfst: numbers.generator.hfst adverbs.generator.hfst
+	hfst-disjunct $^ -o $@
+
+andi.generator.hfst: nouns_and_adjectives.generator.hfst numbers_and_adverbs.generator.hfst
 	hfst-disjunct $^ -o $@
 
 # andi.analyzer.hfst: andi.generator.hfst
