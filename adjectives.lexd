@@ -15,6 +15,7 @@ Affix[4] Stem[4] [<adj>:]
 PATTERN ClassInfix
 InStem(1) Affix InStem(2) [<adj>:]
 
+
 LEXICON NoClassesLex
 бещйа
 битом
@@ -53,12 +54,12 @@ LEXICON NoClassesLex
 чора
 
 
-
 LEXICON Affix
 <cl>[1]:в
 <cl>[2]:й
 <cl>[3]:б
 <cl>[4]:р
+
 
 LEXICON Stem
 екъуб[1,2,3,4]

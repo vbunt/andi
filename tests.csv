@@ -1,44 +1,114 @@
 analysis,form,mustpass,source,page,description
-мийар<n><abs.sg>,мийар,pass,…,…,абсолютив единственного
-мийар<n><obl.sg><erg>,мийарди,pass,…,…,эргатив единственного
-мийар<n><obl.sg><dat>,мийарй,pass,…,…,датив единственного
-мийар<n><obl.sg><dat>,мийарлълъий,pass,…,…,датив единственного
-мийар<n><obl.sg><dat>,мийарлъу,pass,…,…,датив единственного
-мийар<n><obl.sg><gen>,мийарлІол,pass,…,…,генитив единственного
-мийар<n><obl.sg><gen>,мийарлІи,pass,…,…,генитив единственного
-хороша<n><obl.sg><cl><gen>,хорошвул,pass,…,…,генитив единственного
-хороша<n><obl.sg><cl><gen>,хорошвил,pass,…,…,генитив единственного
-хороша<n><obl.sg><cl><gen>,хорошв,pass,…,…,генитив единственного
-хороша<n><obl.sg><cl><gen>,хорошйул,pass,…,…,генитив единственного
-хороша<n><obl.sg><cl><gen>,хорошйил,pass,…,…,генитив единственного
-хороша<n><obl.sg><cl><gen>,хорошй,pass,…,…,генитив единственного
-хороша<n><obl.sg><cl><gen>,хорошбул,pass,…,…,генитив единственного
-хороша<n><obl.sg><cl><gen>,хорошбил,pass,…,…,генитив единственного
-хороша<n><obl.sg><cl><gen>,хорошб,pass,…,…,генитив единственного
-хороша<n><obl.sg><cl><gen>,хорошрул,pass,…,…,генитив единственного
-хороша<n><obl.sg><cl><gen>,хорошрил,pass,…,…,генитив единственного
-хороша<n><obl.sg><cl><gen>,хорошр,pass,…,…,генитив единственного
-мийар<n><obl.sg><ins>,мийархьхи,pass,…,…,инструменталис единственного
-мийар<n><obl.sg><cl><aff>,мийарво,pass,…,…,аффектив единственного
-мийар<n><obl.sg><cl><aff>,мийарйо,pass,…,…,аффектив единственного
-мийар<n><obl.sg><cl><aff>,мийарбо,pass,…,…,аффектив единственного
-мийар<n><obl.sg><cl><aff>,мийарро,pass,…,…,аффектив единственного
-мийар<n><obl.sg><sub>,мийаркьи,pass,…,…,sub sg
-мийар<n><obl.sg><sub><el>,мийаркьикку,pass,…,…,sub elative sg
-мийар<n><obl.sg><sup.ess>,мийарла,pass,…,…,super essive sg
-мийар<n><obl.sg><sup.lat>,мийарло,pass,…,…,super lative sg
-мийар<n><obl.sg><sup><el>,мийарлакку,pass,…,…,super elative sg
-мийар<n><obl.sg><in.ess>,мийарла,pass,…,…,in essive sg
-мийар<n><obl.sg><ess>,мийару,pass,…,…,essive sg
-мийар<n><obl.sg><in.lat>,мийарло,pass,…,…,in lative sg
-мийар<n><obl.sg><lat>,мийарди,pass,…,…,lative sg
-мийар<n><obl.sg><in><el>,мийарлакку,pass,…,…,in elative sg
-мийар<n><obl.sg><inter>,мийарлІи,pass,…,…,inter (essive) sg
-мийар<n><obl.sg><inter><el>,мийарлІикку,pass,…,…,inter elative sg
-мийар<n><obl.sg><apud.ess>,мийарха,pass,…,…,apud essive sg
-мийар<n><obl.sg><apud.lat>,мийархо,pass,…,…,apud lative sg
-мийар<n><obl.sg><apud><el>,мийархакку,pass,…,…,apud elative sg
-мийар<n><obl.sg><cont>,мийарчІу,pass,…,…,cont (essive) sg
-мийар<n><obl.sg><cont><el>,мийарчІукку,pass,…,…,cont elative sg
-мийар<n><obl.sg><in>,мийару,pass,…,…,in (essive) sg
-мийар<n><obl.sg><in><el>,мийарукку,pass,…,…,in elative sg
+алкуци<n><abs.sg>,алкуци,pass,.,.,noun abs sg
+алкуци<n><obl.sg><erg>,алкуцуди,pass,.,.,noun erg sg
+алкуци<n><obl.sg><gen>,алкуцулІи,pass,.,.,noun gen sg
+алкуци<n><obl.sg><gen>,алкуцулІол,pass,.,.,noun gen sg
+алкуци<n><obl.sg><dat>,алкуцуй,pass,.,.,noun dat sg
+алкуци<n><obl.sg><dat>,алкуцулъу,pass,.,.,noun dat sg
+алкуци<n><obl.sg><dat>,алкуцулълъий,pass,.,.,noun dat sg
+алкуци<n><obl.sg><ins>,алкуцухьхи,pass,.,.,noun ins sg
+алкуци<n><obl.sg><sub>,алкуцукьи,pass,.,.,noun abs sg
+алкуци<n><obl.sg><cl><aff>,алкуцуво,pass,.,.,noun aff sg
+алкуци<n><obl.sg><cl><aff>,алкуцуйо,pass,.,.,noun aff sg
+алкуци<n><obl.sg><cl><aff>,алкуцубо,pass,.,.,noun aff sg
+алкуци<n><obl.sg><cl><aff>,алкуцуро,pass,.,.,noun aff sg
+алкуци<n><abs.pl>,алкуцобил,pass,.,.,noun abs pl
+има<n><obl.sg><cl><gen>,имувул,pass,.,.,noun gen sg
+има<n><obl.sg><cl><gen>,имувил,pass,.,.,noun gen sg
+има<n><obl.sg><cl><gen>,имув,pass,.,.,noun gen sg
+има<n><obl.sg><cl><gen>,имуйул,pass,.,.,noun gen sg
+има<n><obl.sg><cl><gen>,имуйил,pass,.,.,noun gen sg
+има<n><obl.sg><cl><gen>,имуй,pass,.,.,noun gen sg
+има<n><obl.sg><cl><gen>,имубул,pass,.,.,noun gen sg
+има<n><obl.sg><cl><gen>,имубил,pass,.,.,noun gen sg
+има<n><obl.sg><cl><gen>,имуб,pass,.,.,noun gen sg
+има<n><obl.sg><cl><gen>,имурул,pass,.,.,noun gen sg
+има<n><obl.sg><cl><gen>,имурил,pass,.,.,noun gen sg
+има<n><obl.sg><cl><gen>,имур,pass,.,.,noun gen sg
+алкуци<n><obl.sg><sub><el>,алкуцукьикку,pass,.,.,noun sub elative sg
+алкуци<n><obl.sg><super.ess>,алкуцула,pass,.,.,noun super essive sg
+алкуци<n><obl.sg><super.lat>,алкуцуло,pass,.,.,noun super lative sg
+алкуци<n><obl.sg><super><el>,алкуцулакку,pass,.,.,noun super elative sg
+алкуци<n><obl.sg><in.ess>,алкуцула,pass,.,.,noun inessive sg
+алкуци<n><obl.sg><ess>,алкуцуу,pass,.,.,noun essive sg
+алкуци<n><obl.sg><in.lat>,алкуцуло,pass,.,.,noun illative sg
+алкуци<n><obl.sg><lat>,алкуцуди,pass,.,.,noun lative sg
+алкуци<n><obl.sg><in><el>,алкуцулакку,pass,.,.,noun in elative sg
+алкуци<n><obl.sg><inter>,алкуцулІи,pass,.,.,noun inter essive|lative sg
+алкуци<n><obl.sg><inter><el>,алкуцулІикку,pass,.,.,noun inter elative sg
+алкуци<n><obl.sg><apud.ess>,алкуцуха,pass,.,.,noun apud essive sg
+алкуци<n><obl.sg><apud.lat>,алкуцухо,pass,.,.,noun apud lative sg
+алкуци<n><obl.sg><apud><el>,алкуцухакку,pass,.,.,noun apud elative sg
+алкуци<n><obl.sg><cont>,алкуцучІу,pass,.,.,noun cont essive|lative sg
+алкуци<n><obl.sg><cont><el>,алкуцучІукку,pass,.,.,noun cont elative sg
+алкуци<n><obl.sg><in>,алкуцуу,pass,.,.,noun in essive|lative sg
+алкуци<n><obl.sg><in><el>,алкуцуукку,pass,.,.,noun in elative sg
+алкуци<n><abs.pl>,алкуцобил,pass,.,.,noun abs pl
+алкуци<n><obl.pl><erg>,алкуцобиди,pass,.,.,noun erg pl
+алкуци<n><obl.pl><dat>,алкуцобий,pass,.,.,noun dat pl
+алкуци<n><obl.pl><dat>,алкуцобилъу,pass,.,.,noun dat pl
+алкуци<n><obl.pl><dat>,алкуцобилълъий,pass,.,.,noun dat pl
+алкуци<n><obl.pl><ins>,алкуцобихьхи,pass,.,.,noun ins pl
+алкуци<n><obl.pl><cl><aff>,алкуцобиво,pass,.,.,noun aff pl
+алкуци<n><obl.pl><cl><aff>,алкуцобийо,pass,.,.,noun aff pl
+алкуци<n><obl.pl><cl><aff>,алкуцобибо,pass,.,.,noun aff pl
+алкуци<n><obl.pl><cl><aff>,алкуцобиро,pass,.,.,noun aff pl
+алкуци<n><obl.pl><gen>,алкуцобилІи,pass,.,.,noun gen pl
+алкуци<n><obl.pl><gen>,алкуцобилІол,pass,.,.,noun gen pl
+има<n><obl.pl><cl><gen>,имобивул,pass,.,.,noun gen pl
+има<n><obl.pl><cl><gen>,имобивил,pass,.,.,noun gen pl
+има<n><obl.pl><cl><gen>,имобив,pass,.,.,noun gen pl
+има<n><obl.pl><cl><gen>,имобийул,pass,.,.,noun gen pl
+има<n><obl.pl><cl><gen>,имобийил,pass,.,.,noun gen pl
+има<n><obl.pl><cl><gen>,имобий,pass,.,.,noun gen pl
+има<n><obl.pl><cl><gen>,имобибул,pass,.,.,noun gen pl
+има<n><obl.pl><cl><gen>,имобибил,pass,.,.,noun gen pl
+има<n><obl.pl><cl><gen>,имобиб,pass,.,.,noun gen pl
+има<n><obl.pl><cl><gen>,имобирул,pass,.,.,noun gen pl
+има<n><obl.pl><cl><gen>,имобирил,pass,.,.,noun gen pl
+има<n><obl.pl><cl><gen>,имобир,pass,.,.,noun gen pl
+алкуци<n><obl.pl><sub>,алкуцобикьи,pass,.,.,noun sub essive|lative pl
+алкуци<n><obl.pl><sub><el>,алкуцобикьикку,pass,.,.,noun sub elative pl
+алкуци<n><obl.pl><super.ess>,алкуцобила,pass,.,.,noun super essive pl
+алкуци<n><obl.pl><super.lat>,алкуцобило,pass,.,.,noun super lative pl
+алкуци<n><obl.pl><super><el>,алкуцобилакку,pass,.,.,noun super elative pl
+алкуци<n><obl.pl><inter>,алкуцобилІи,pass,.,.,noun inter essive|lative pl
+алкуци<n><obl.pl><inter><el>,алкуцобилІикку,pass,.,.,noun inter elative pl
+алкуци<n><obl.pl><apud.ess>,алкуцобиха,pass,.,.,noun apud essive pl
+алкуци<n><obl.pl><apud.lat>,алкуцобихо,pass,.,.,noun apud lative pl
+алкуци<n><obl.pl><apud><el>,алкуцобихакку,pass,.,.,noun apus elative pl
+алкуци<n><obl.pl><cont>,алкуцобичІу,pass,.,.,noun cont essive|lative pl
+алкуци<n><obl.pl><cont><el>,алкуцобичІукку,pass,.,.,noun cont elative pl
+алкуци<n><obl.pl><loc>,алкуцобихъи,pass,.,.,noun loc essive|lative pl
+алкуци<n><obl.pl><loc><el>,алкуцобихъикку,pass,.,.,noun loc elative pl
+битом<adj>,битом,pass,.,.,adj no class
+<cl>екъуб<adj>,векъуб,pass,.,.,adj class affix
+<cl>екъуб<adj>,йекъуб,pass,.,.,adj class affix
+<cl>екъуб<adj>,бекъуб,pass,.,.,adj class affix
+<cl>екъуб<adj>,рекъуб,pass,.,.,adj class affix
+а<cl>лъин<adj>,авлъин,pass,.,.,adj class infix
+а<cl>лъин<adj>,айлъин,pass,.,.,adj class infix
+а<cl>лъин<adj>,аблъин,pass,.,.,adj class infix
+а<cl>лъин<adj>,арлъин,pass,.,.,adj class infix
+лІеру<adv>,лІеру,pass,.,.,adv no class
+<cl>окьу<adv>,йокьу,pass,.,.,adj class affix
+<cl>окьу<adv>,рокьу,pass,.,.,adj class affix
+<cl>окьу<adv>,бокьу,pass,.,.,adj class affix
+<cl>окьу<adv>,вокьу,pass,.,.,adj class affix
+се<num><cl>,сев,pass,.,.,num one
+се<num><cl>,сей,pass,.,.,num one
+се<num><cl>,себ,pass,.,.,num one
+се<num><cl>,сер,pass,.,.,num one
+<cl>окъго<num><card>,вокъгогу,pass,.,.,num four
+<cl>окъго<num><ten><card>,вокъгоцІолгу,pass,.,.,num fourty
+<cl>окъго<num><ten><lnk>,вокъгоцІолло,pass,.,.,num fourty and
+<cl>окъго<num><card>,йокъгогу,pass,.,.,num four
+<cl>окъго<num><ten><card>,йокъгоцІолгу,pass,.,.,num fourty
+<cl>окъго<num><ten><lnk>,йокъгоцІолло,pass,.,.,num fourty and
+<cl>окъго<num><card>,бокъгогу,pass,.,.,num four
+<cl>окъго<num><ten><card>,бокъгоцІолгу,pass,.,.,num fourty
+<cl>окъго<num><ten><lnk>,бокъгоцІолло,pass,.,.,num fourty and
+<cl>окъго<num><card>,рокъгогу,pass,.,.,num four
+<cl>окъго<num><ten><card>,рокъгоцІолгу,pass,.,.,num fourty
+<cl>окъго<num><ten><lnk>,рокъгоцІолло,pass,.,.,num fourty and
+гьоцІо<num><lnk>,гьоцІолІи,pass,.,.,num teen

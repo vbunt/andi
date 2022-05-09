@@ -28,7 +28,7 @@ AbsPlLex[ол] [<n>:] AbsPlSuf[ол]
 AbsPlLex[лил] [<n>:] AbsPlSuf[лил]
 
 PATTERN OblPl
-OblPlLex [<n>:] [<obl.pl>:] Case[-sg]
+OblPlLex [<n>:] [<obl.pl>:] Case[-sg,-gen,-aff]
 GenitivePl
 AffectivePl
 
@@ -49,11 +49,12 @@ LEXICON Case
 <gen>:лІол[gen]
 <aff>:о[aff]
 <ins>:хьхи
+
 <sub>:кьи
 <sub><el>:кьикку
-<sup.ess>:ла
-<sup.lat>:ло
-<sup><el>:лакку
+<super.ess>:ла
+<super.lat>:ло
+<super><el>:лакку
 <in.ess>:ла[sg]
 <ess>:у[sg]
 <in.lat>:ло[sg]
