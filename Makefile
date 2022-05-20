@@ -1,4 +1,4 @@
-.DEFAULT_GOAL := clean_some
+.DEFAULT_GOAL := andi.analyzer.tr.hfst
 
 
 nouns.generator.hfst: nouns.lexd
@@ -25,8 +25,13 @@ numbers_and_adverbs.generator.hfst: numbers.generator.hfst adverbs.generator.hfs
 andi.generator.hfst: nouns_and_adjectives.generator.hfst numbers_and_adverbs.generator.hfst
 	hfst-disjunct $^ -o $@
 
-# andi.analyzer.hfst: andi.generator.hfst
-# 	hfst-invert $< -o $@
+#andi.twol.hfst: andi.twol
+#	hfst-twolc $< -o $@
+
+#andi.generator.hfst: andi_.generator.hfst andi.twol.hfst
+#	hfst-compose-intersect $^ -o $@
+andi.analyzer.hfst: andi.generator.hfst
+	hfst-invert $< -o $@
 
 
 # la2cy.transliterater.hfst: cy2la.transliterater.hfst # для анализа
@@ -40,6 +45,9 @@ andi.analyzer.tr.hfst: andi.generator.tr.hfst
 	hfst-invert $< -o $@
 andi.generator.tr.hfst: andi.generator.hfst cy2la.transliterater.hfst
 	hfst-compose $^ -o $@
+	rm correspondence.hfst
+	rm cy2la.transliterater.hfst
+	rm *[!i].generator.hfst
 
 test.pass.txt: tests.csv
 	awk -F, '$$3 == "pass" {print $$1 ":" $$2}' $^ | sort -u > $@

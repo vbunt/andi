@@ -1,18 +1,18 @@
 analysis,form,mustpass,source,page,description
 алкуци<n><abs.sg>,алкуци,pass,.,.,noun abs sg
 алкуци<n><obl.sg><erg>,алкуцуди,pass,.,.,noun erg sg
+алкуци<n><obl.sg><ins>,алкуцухъи,pass,.,.,noun ins sg
+алкуци<n><obl.sg><sub>,алкуцукьи,pass,.,.,noun abs sg
+алкуци<n><abs.pl>,алкуцобил,pass,.,.,noun abs pl
+алкуци<n><obl.sg><cl><aff>,алкуцуво,pass,.,.,noun aff sg
+алкуци<n><obl.sg><cl><aff>,алкуцуйо,pass,.,.,noun aff sg
+алкуци<n><obl.sg><cl><aff>,алкуцубо,pass,.,.,noun aff sg
+алкуци<n><obl.sg><cl><aff>,алкуцуро,pass,.,.,noun aff sg
 алкуци<n><obl.sg><gen>,алкуцулІи,pass,.,.,noun gen sg
 алкуци<n><obl.sg><gen>,алкуцулІол,pass,.,.,noun gen sg
 алкуци<n><obl.sg><dat>,алкуцуй,pass,.,.,noun dat sg
 алкуци<n><obl.sg><dat>,алкуцулъу,pass,.,.,noun dat sg
 алкуци<n><obl.sg><dat>,алкуцулълъий,pass,.,.,noun dat sg
-алкуци<n><obl.sg><ins>,алкуцухьхи,pass,.,.,noun ins sg
-алкуци<n><obl.sg><sub>,алкуцукьи,pass,.,.,noun abs sg
-алкуци<n><obl.sg><cl><aff>,алкуцуво,pass,.,.,noun aff sg
-алкуци<n><obl.sg><cl><aff>,алкуцуйо,pass,.,.,noun aff sg
-алкуци<n><obl.sg><cl><aff>,алкуцубо,pass,.,.,noun aff sg
-алкуци<n><obl.sg><cl><aff>,алкуцуро,pass,.,.,noun aff sg
-алкуци<n><abs.pl>,алкуцобил,pass,.,.,noun abs pl
 има<n><obl.sg><cl><gen>,имувул,pass,.,.,noun gen sg
 има<n><obl.sg><cl><gen>,имувил,pass,.,.,noun gen sg
 има<n><obl.sg><cl><gen>,имув,pass,.,.,noun gen sg
@@ -26,9 +26,9 @@ analysis,form,mustpass,source,page,description
 има<n><obl.sg><cl><gen>,имурил,pass,.,.,noun gen sg
 има<n><obl.sg><cl><gen>,имур,pass,.,.,noun gen sg
 алкуци<n><obl.sg><sub><el>,алкуцукьикку,pass,.,.,noun sub elative sg
-алкуци<n><obl.sg><super.ess>,алкуцула,pass,.,.,noun super essive sg
-алкуци<n><obl.sg><super.lat>,алкуцуло,pass,.,.,noun super lative sg
-алкуци<n><obl.sg><super><el>,алкуцулакку,pass,.,.,noun super elative sg
+алкуци<n><obl.sg><sup.ess>,алкуцула,pass,.,.,noun super essive sg
+алкуци<n><obl.sg><sup.lat>,алкуцуло,pass,.,.,noun super lative sg
+алкуци<n><obl.sg><sup><el>,алкуцулакку,pass,.,.,noun super elative sg
 алкуци<n><obl.sg><in.ess>,алкуцула,pass,.,.,noun inessive sg
 алкуци<n><obl.sg><ess>,алкуцуу,pass,.,.,noun essive sg
 алкуци<n><obl.sg><in.lat>,алкуцуло,pass,.,.,noun illative sg
@@ -48,7 +48,7 @@ analysis,form,mustpass,source,page,description
 алкуци<n><obl.pl><dat>,алкуцобий,pass,.,.,noun dat pl
 алкуци<n><obl.pl><dat>,алкуцобилъу,pass,.,.,noun dat pl
 алкуци<n><obl.pl><dat>,алкуцобилълъий,pass,.,.,noun dat pl
-алкуци<n><obl.pl><ins>,алкуцобихьхи,pass,.,.,noun ins pl
+алкуци<n><obl.pl><ins>,алкуцобихъи,pass,.,.,noun ins pl
 алкуци<n><obl.pl><cl><aff>,алкуцобиво,pass,.,.,noun aff pl
 алкуци<n><obl.pl><cl><aff>,алкуцобийо,pass,.,.,noun aff pl
 алкуци<n><obl.pl><cl><aff>,алкуцобибо,pass,.,.,noun aff pl
@@ -69,9 +69,9 @@ analysis,form,mustpass,source,page,description
 има<n><obl.pl><cl><gen>,имобир,pass,.,.,noun gen pl
 алкуци<n><obl.pl><sub>,алкуцобикьи,pass,.,.,noun sub essive|lative pl
 алкуци<n><obl.pl><sub><el>,алкуцобикьикку,pass,.,.,noun sub elative pl
-алкуци<n><obl.pl><super.ess>,алкуцобила,pass,.,.,noun super essive pl
-алкуци<n><obl.pl><super.lat>,алкуцобило,pass,.,.,noun super lative pl
-алкуци<n><obl.pl><super><el>,алкуцобилакку,pass,.,.,noun super elative pl
+алкуци<n><obl.pl><sup.ess>,алкуцобила,pass,.,.,noun super essive pl
+алкуци<n><obl.pl><sup.lat>,алкуцобило,pass,.,.,noun super lative pl
+алкуци<n><obl.pl><sup><el>,алкуцобилакку,pass,.,.,noun super elative pl
 алкуци<n><obl.pl><inter>,алкуцобилІи,pass,.,.,noun inter essive|lative pl
 алкуци<n><obl.pl><inter><el>,алкуцобилІикку,pass,.,.,noun inter elative pl
 алкуци<n><obl.pl><apud.ess>,алкуцобиха,pass,.,.,noun apud essive pl

@@ -19,7 +19,6 @@ OblSgLex[-1] [<n>:] [<obl.sg>:] Case[gen]
 PATTERN AffectiveSg # аффектив единственного
 OblSgLex [<n>:] [<obl.sg>:] Class Case[aff]
 
-
 PATTERN AbsPl
 AbsPlLex[л] [<n>:] AbsPlSuf[л]
 AbsPlLex[ил] [<n>:] AbsPlSuf[ил]
@@ -48,13 +47,12 @@ LEXICON Case
 <gen>:лІи[gen]
 <gen>:лІол[gen]
 <aff>:о[aff]
-<ins>:хьхи
-
+<ins>:хъи
 <sub>:кьи
 <sub><el>:кьикку
-<super.ess>:ла
-<super.lat>:ло
-<super><el>:лакку
+<sup.ess>:ла
+<sup.lat>:ло
+<sup><el>:лакку
 <in.ess>:ла[sg]
 <ess>:у[sg]
 <in.lat>:ло[sg]
