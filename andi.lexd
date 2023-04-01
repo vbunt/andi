@@ -12,6 +12,7 @@ RoundAnd
 NoClasses
 ClassInfix
 ClassPrefix
+Conjunction
 
 PATTERN AbsSg # абсолютив единственного
 NounAbsSgLex [<n>:] [<abs.sg>:]
@@ -81,6 +82,13 @@ Class[4] AdvStem[4] [<adv>:]
 
 PATTERN ClassInfix
 AdjInStem(1) Class AdjInStem(2) [<adj>:]
+
+PATTERN Conjunction
+Conjunctions[-clitic] [<conj>:]
+AbsPl Conjunctions[clitic]
+AbsPl Conjunctions[clitic]
+OblSg Conjunctions[clitic]
+OblPl Conjunctions[clitic]
 
 LEXICON Case
 <erg>:ди
@@ -158,6 +166,14 @@ LEXICON Ten
 <ten>:цІол
 LEXICON Link2
 <lnk>:ло
+
+LEXICON Conjunctions # по салимову
+я # или
+ялъибор # или
+во # и
+амма # но
+<conj>:ло[clitic] # и
+<conj>:но[clitic] # и
 
 
 LEXICON NounAbsSgLex
