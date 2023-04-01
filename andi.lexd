@@ -1,19 +1,17 @@
 # этот парсер на кириллице
 PATTERNS
-AbsSg
-OblSg
-AbsPl
-OblPl
-One
-OneDigit
-Teen
-Round
-RoundAnd
-NoClasses
-ClassInfix
-ClassPrefix
+Noun
+Numeral
+AdverbAdjective
 Conjunction
 Pronoun
+Demonstrative
+
+PATTERN Noun
+AbsSg
+AbsPl
+OblSg
+OblPl
 
 PATTERN AbsSg # абсолютив единственного
 NounAbsSgLex [<n>:] [<abs.sg>:]
@@ -49,6 +47,13 @@ NounOblPlLex[-1] [<n>:] [<obl.pl>:] Case[gen]
 PATTERN AffectivePl # аффектив множественного
 NounOblPlLex [<n>:] [<obl.pl>:] Class Case[aff]
 
+PATTERN Numeral
+One
+OneDigit
+Teen
+Round
+RoundAnd
+
 PATTERN One
 NumClassRoot[1] [<num>:] Class
 
@@ -66,6 +71,11 @@ PATTERN Round
 
 PATTERN RoundAnd
 (NumRoot[-10] | Four) [<num>:] Ten Link2 
+
+PATTERN AdverbAdjective
+NoClasses
+ClassInfix
+ClassPrefix
 
 PATTERN NoClasses
 AdjNoClassesLex [<adj>:]
@@ -90,6 +100,25 @@ AbsPl Conjunctions[clitic]
 AbsPl Conjunctions[clitic]
 OblSg Conjunctions[clitic]
 OblPl Conjunctions[clitic]
+
+PATTERN Demonstrative
+Consonants[х] Vowels (Consonants[н] (Vowels)?)? (Consonants[|[д,г,лъ]] Vowels)? Class [<demonstrative>:] # лъ вместо л-палка
+# ну тут кринж какой-то произошел
+# у меня из всех возможных 2к+ форм только четыре в евангелии нашлись
+
+LEXICON Vowels
+а
+о
+у
+е
+и
+
+LEXICON Consonants
+х[х]
+д[д]
+г[г]
+лъ[лъ]
+н[н]
 
 PATTERN Pronoun
 Pronouns[sg,-obl] [<pronoun>:] [<abs>:]
