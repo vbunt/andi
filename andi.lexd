@@ -13,6 +13,7 @@ NoClasses
 ClassInfix
 ClassPrefix
 Conjunction
+Pronoun
 
 PATTERN AbsSg # абсолютив единственного
 NounAbsSgLex [<n>:] [<abs.sg>:]
@@ -89,6 +90,27 @@ AbsPl Conjunctions[clitic]
 AbsPl Conjunctions[clitic]
 OblSg Conjunctions[clitic]
 OblPl Conjunctions[clitic]
+
+PATTERN Pronoun
+Pronouns[sg,-obl] [<pronoun>:] [<abs>:]
+Pronouns[pl] [<pronoun>:] [<abs>:л] # в грамматике л не отделяется но я решила что так лучше
+Pronouns[sg,-obl] [<pronoun>:] [<erg>:ни]
+Pronouns[pl] [<pronoun>:] [<erg>:ди]
+Pronouns[sg,obl] [<pronoun>:] Class [<gen>:]
+Pronouns[pl] [<pronoun>:] Class [<gen>:]
+Pronouns[pl] [<pronoun>:] [<gen>:лълъ]
+Pronouns[|[pl,obl]] [<pronoun>:] [<dat>:й]
+# iƛi-ɬu здесь должен быть еще такой паттерн
+Pronouns[|[pl,obl]] [<pronoun>:] Class [<aff>:о]
+
+LEXICON Pronouns # following kaye
+ден[sg] # I
+мен[sg] # you sg
+бисси[pl] # you pl
+ищи[pl] # we excl
+илълъи[pl] # we incl / в этом корне в грамматике ƛ, но я пишу его здесь как ɬ потому что сравниваю с евангелием
+ди[sg,obl] # I
+ду[sg,obl] # you sg
 
 LEXICON Case
 <erg>:ди
