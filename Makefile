@@ -1,7 +1,11 @@
 .DEFAULT_GOAL := andi.analyzer.hfst
 
+# 
+ani.lexd: $(wildcard ani_*.lexd)
+	cat ani_*.lexd > ani.lexd
+
 # generate generator
-andi.generator.hfst: andi.lexd
+andi.generator.hfst: ani.lexd
 	lexd $< | hfst-txt2fst -o $@
 
 # test generator
@@ -10,7 +14,7 @@ test.pass.txt: tests.csv
 check: andi.generator.hfst test.pass.txt
 	bash compare.sh $< test.pass.txt
 
-# genearte analizer
+# generate analizer
 andi.analyzer.hfst: check
 	rm test.*
 	hfst-invert andi.generator.hfst -o $@
