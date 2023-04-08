@@ -19,25 +19,43 @@ LEXICON Class
 #-----------VERBS-----------
 
 PATTERN Verb
-Inf [<verb>:] VMarkers[finf] # инфинитив 1
-Inf [<verb>:] VMarkers[pres] # настоящее
-Aor [<verb>:] VMarkers[fut] # будущее но кажется оно тоже должно быть от инфинитива с сокращением основы
+Class Auxilary [<aux>:] > [<perf>:й]
+VerbSynthetic > Evidentiality
+Imperative
 
-LEXICON Aor
-гьитІон
+PATTERN VerbSynthetic
+# aorist
+Stem(1) Stem(2) [<aor>:]
 
-LEXICON Imp
-гьитІом
+# perfect, also general converb
+Stem(1)[oral] Stem(2) [<perf>:й] 
+Stem(1)[nasal] Stem(2) Consonants[н] [<perf>:ий] 
 
-LEXICON Inf
-гьитІондд # в евангелии
-гьитІонн # в словаре кико
+# present progressive
+Stem(1)[oral] Stem(2) ([<pres.progr>:р] | [<pres.progr>:радо] | [<pres.progr>:ралло]) > ([<pl>:л] | [<pl>:ил])
+Stem(1)[nasal] Stem(2) ([<pres.progr>:мадо] | [<pres.progr>:малло]) > ([<pl>:л] | [<pl>:ил]) # надо чтобы в тволе нм -> м
 
-LEXICON VMarkers
-<finf>:у[finf]
-<pres>:о[pres]
-<fut>:я[fut]
-<fut>:йа[fut]
+# present habitual
+Stem(1)[oral] [<pr.hab>:о]
+Stem(1)[nasal] ([:инн] | [:унн]) [<pr.hab>:о]
+
+# future, also present/habitual participle
+Stem(1)[oral] ([<fut>:йа] | [<fut>:я]) > ([<pl>:л] | [<pl>:ил])
+Stem(1)[nasal] ([:инн] | [:унн]) ([<fut>:йа] | [<fut>:я]) > ([<pl>:л] | [<pl>:ил])
+
+LEXICON Stem(2)
+бос[nasal] ан
+игь[oral] и
+гьитІ[nasal] он
+
+PATTERN Imperative
+Stem(1) ([<imp>:о] | [<imp>:он])
+Stem(1)[oral] Stem(2) [<imp>:б] > [<pl>:ул]
+Stem(1)[nasal] Stem(2) [<imp>:м] > [<pl>:ул] # надо чтобы в тволе нм -> м
+
+LEXICON Auxilary
+икІо
+игъи
 
 
 #-----------NOUNS-----------
