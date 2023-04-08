@@ -6,6 +6,7 @@ Conjunction
 Pronoun
 Demonstrative
 OtherPronoun
+Evidentiality
 
 LEXICON Class
 <cl>:в[1]
@@ -104,9 +105,9 @@ LEXICON Gen
 #-----------ADVERBS AND ADJECTIVES-----------
 
 PATTERN AdverbAdjective
-NoClasses
-ClassInfix
-ClassPrefix
+NoClasses > Vowels [<pl>:л]
+ClassInfix > Vowels [<pl>:л]
+ClassPrefix > Vowels [<pl>:л]
 
 PATTERN NoClasses
 AdjNoClassesLex [<adj>:]
@@ -124,6 +125,17 @@ Class[4] AdvStem[4] [<adv>:]
 
 PATTERN ClassInfix
 AdjInStem(1) Class AdjInStem(2) [<adj>:]
+
+
+#-----------EVIDENTIALITY-----------
+
+PATTERN Evidentiality
+Evid [<evid>:]
+
+LEXICON Evid # частица мол
+гъодду # из евангелия и Салимова
+лъоди # из кайе
+гъоди # из кайе
 
 
 #-----------CONJUNCTIONS-----------

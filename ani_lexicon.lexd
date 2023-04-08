@@ -1,6 +1,8 @@
 #-----------NOUNS-----------
 
 LEXICON NounAbsSgLex
+адам
+иса
 алкуци
 анга
 анжи
@@ -473,6 +475,8 @@ LEXICON NounAbsSgLex
 
 
 LEXICON NounOblSgLex
+адам:адам[1]
+иса:иса[1]
 алкуци:алкуцу[3]
 анга:ангало[5]
 анжи:анжи[4]
