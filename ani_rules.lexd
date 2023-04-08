@@ -7,12 +7,38 @@ Pronoun
 Demonstrative
 OtherPronoun
 Evidentiality
+Verb
 
 LEXICON Class
 <cl>:в[1]
 <cl>:й[2]
 <cl>:б[3]
 <cl>:р[4]
+
+
+#-----------VERBS-----------
+
+PATTERN Verb
+Inf [<verb>:] VMarkers[finf] # инфинитив 1
+Inf [<verb>:] VMarkers[pres] # настоящее
+Aor [<verb>:] VMarkers[fut] # будущее но кажется оно тоже должно быть от инфинитива с сокращением основы
+
+LEXICON Aor
+гьитІон
+
+LEXICON Imp
+гьитІом
+
+LEXICON Inf
+гьитІондд # в евангелии
+гьитІонн # в словаре кико
+
+LEXICON VMarkers
+<finf>:у[finf]
+<pres>:о[pres]
+<fut>:я[fut]
+<fut>:йа[fut]
+
 
 #-----------NOUNS-----------
 
@@ -227,49 +253,20 @@ LEXICON OtherPronouns
 # -----------NUMERALS-----------
 
 PATTERN Numeral
-One
-OneDigit
-Teen
-Round
-RoundAnd
-
-PATTERN One
-NumClassRoot[1] [<num>:] Class
-
-PATTERN Four
-Class NumClassRoot[4]
-
-PATTERN OneDigit
-(NumRoot | Four) [<num>:] Card
-
-PATTERN Teen
-NumRoot[10] [<num>:] Link1
-
-PATTERN Round
-(NumRoot[-10] | Four) [<num>:] Ten Card 
-
-PATTERN RoundAnd
-(NumRoot[-10] | Four) [<num>:] Ten Link2 
-
-LEXICON NumClassRoot
-се[1] # 1
-окъго[4] # 4
+NumRoot[1] [<num>:] Class # 1
+(NumRoot[-1,-4] | (Class NumRoot[4])) [<num>:] [<card>:гу] # 2-10
+NumRoot[10] [<num>:] [<lnk>:лІи] # -дцать
+(NumRoot[-10,-1,-4] | (Class NumRoot[4])) [<num>:] [<ten>:цІол] [<card>:гу] # round number
+(NumRoot[-10,-1,-4] | (Class NumRoot[4])) [<num>:] [<ten>:цІол] [<lnk>:ло] # round +
 
 LEXICON NumRoot
+се[1] # 1
 чІе # 2 
 лъоб # 3
+окъго[4] # 4
 иншду # 5 
 онлІи # 6 
 гьокьу # 7
 бийкьи # 8
 гьочІо # 9
 гьоцІо[10] # 10
-
-LEXICON Card
-<card>:гу
-LEXICON Link1
-<lnk>:лІи
-LEXICON Ten
-<ten>:цІол
-LEXICON Link2
-<lnk>:ло
