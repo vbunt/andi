@@ -1,0 +1,20 @@
+# -----------NUMERALS-----------
+
+PATTERN Numeral
+NumRoot[1] [<num>:] Class # 1
+(NumRoot[-1,-4] | (Class NumRoot[4])) [<num>:] [<card>:гу] # 2-10
+NumRoot[10] [<num>:] [<lnk>:лІи] # -дцать
+(NumRoot[-10,-1,-4] | (Class NumRoot[4])) [<num>:] [<ten>:цІол] [<card>:гу] # round number
+(NumRoot[-10,-1,-4] | (Class NumRoot[4])) [<num>:] [<ten>:цІол] [<lnk>:ло] # round +
+
+LEXICON NumRoot
+се[1] # 1
+чІе # 2 
+лъоб # 3
+окъго[4] # 4
+иншду # 5 
+онлІи # 6 
+гьокьу # 7
+бийкьи # 8
+гьочІо # 9
+гьоцІо[10] # 10

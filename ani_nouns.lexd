@@ -1,0 +1,93 @@
+#-----------NOUNS-----------
+
+PATTERN Noun
+AbsSg
+AbsPl
+OblSg
+OblPl
+
+PATTERN AbsSg # абсолютив единственного
+NounAbsSgLex [<n>:] [<abs.sg>:]
+
+PATTERN OblSg # косвенные падежи единственного
+NounOblSgLex [<n>:] [<obl.sg>:] Case[-pl,-gen,-aff]
+GenitiveSg
+AffectiveSg
+
+PATTERN GenitiveSg # генитив единственного
+NounOblSgLex[1] [<n>:] [<obl.sg>:] Class Gen
+NounOblSgLex[-1] [<n>:] [<obl.sg>:] Case[gen]
+
+PATTERN AffectiveSg # аффектив единственного
+NounOblSgLex [<n>:] [<obl.sg>:] Class Case[aff]
+
+PATTERN AbsPl
+NounAbsPlLex[л] [<n>:] AbsPlSuf[л]
+NounAbsPlLex[ил] [<n>:] AbsPlSuf[ил]
+NounAbsPlLex[ул] [<n>:] AbsPlSuf[ул]
+NounAbsPlLex[ол] [<n>:] AbsPlSuf[ол]
+NounAbsPlLex[лил] [<n>:] AbsPlSuf[лил]
+
+PATTERN OblPl
+NounOblPlLex [<n>:] [<obl.pl>:] Case[-sg,-gen,-aff]
+GenitivePl
+AffectivePl
+
+PATTERN GenitivePl # генитив множественного
+NounOblPlLex[1] [<n>:] [<obl.pl>:] Class Gen
+NounOblPlLex[-1] [<n>:] [<obl.pl>:] Case[gen]
+
+PATTERN AffectivePl # аффектив множественного
+NounOblPlLex [<n>:] [<obl.pl>:] Class Case[aff]
+
+LEXICON Case
+<erg>:ди[erg]
+<dat>:й[dat]
+<dat>:лъу[dat]
+<dat>:лълъий[dat]
+<gen>:лІи[gen]
+<gen>:лІол[gen]
+<aff>:о[aff]
+<ins>:хъи
+<sub>:кьи
+<sub><el>:кьикку
+<sup.ess>:ла
+<sup.lat>:ло
+<sup><el>:лакку
+<in.ess>:ла[sg]
+<ess>:у[sg]
+<in.lat>:ло[sg]
+<lat>:ди[sg]
+<in><el>:лакку[sg]
+<inter>:лІи
+<inter><el>:лІикку
+<apud.ess>:ха
+<apud.lat>:хо
+<apud><el>:хакку
+<cont>:чІу
+<cont><el>:чІукку
+<loc>:хъи[pl]
+<loc>:хъи[pl]
+<loc><el>:хъикку[pl]
+<in>:у[sg]
+<in>:у[sg]
+<in><el>:укку[sg]
+
+LEXICON AbsPlSuf
+<abs.pl>:л[л]
+<abs.pl>:ил[ил]
+<abs.pl>:ул[ул]
+<abs.pl>:ол[ол]
+<abs.pl>:лил[лил]
+
+LEXICON Gen
+<gen>:ул
+<gen>:ил
+<gen>:
+
+LEXICON Class
+<cl>:в[1]
+<cl>:й[2]
+<cl>:б[3]
+<cl>:р[4]
+

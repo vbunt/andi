@@ -1,0 +1,66 @@
+#-----------DEMONSRATIVES-----------
+
+PATTERN Demonstrative
+Consonants[х] Vowels (Consonants[н] (Vowels)?)? (Consonants[|[д,г,лъ]] Vowels)? Class [<demonstrative>:] # лъ вместо л-палка
+
+LEXICON Vowels
+а
+о
+у
+е
+и
+
+LEXICON Consonants
+гь[х]
+д[д]
+г[г]
+лъ[лъ]
+н[н]
+
+
+#-----------PERSONAL PRONOUNS-----------
+
+PATTERN Pronoun
+Pronouns[sg,-obl] [<pronoun>:] [<abs>:]
+Pronouns[pl] [<pronoun>:] [<abs>:л] # в грамматике л не отделяется но я решила что так лучше
+Pronouns[sg,-obl] [<pronoun>:] [<erg>:ни]
+Pronouns[pl] [<pronoun>:] [<erg>:ди]
+Pronouns[sg,obl] [<pronoun>:] Class [<gen>:]
+Pronouns[pl] [<pronoun>:] Class [<gen>:]
+Pronouns[pl] [<pronoun>:] [<gen>:лълъ]
+Pronouns[|[pl,obl]] [<pronoun>:] [<dat>:й]
+# iƛi-ɬu здесь должен быть еще такой паттерн
+Pronouns[|[pl,obl]] [<pronoun>:] Class [<aff>:о]
+
+LEXICON Pronouns # following kaye
+ден[sg] # I
+мен[sg] # you sg
+бисси[pl] # you pl
+ищи[pl] # we excl
+илълъи[pl] # we incl / в этом корне в грамматике ƛ, но я пишу его здесь как ɬ потому что сравниваю с евангелием
+ди[sg,obl] # I
+ду[sg,obl] # you sg
+
+
+#-----------OTHER PRONOUNS-----------
+
+PATTERN OtherPronoun # kaye + салимов
+Pronoun [<int>:гу]
+OtherPronouns[abs] [<pronoun>:] Class [<abs>:] > [<pl>:ол]
+OtherPronouns[|[erg,pl]] [<pronoun>:] Case[erg]
+OtherPronouns[1,-erg] [<pronoun>:] Class [<gen>:] # без мн числа
+OtherPronouns[2,-erg] [<pronoun>:] Case[gen]
+OtherPronouns[-abs,-erg] [<pronoun>:] Case[dat]
+OtherPronouns[-abs,-erg] [<pronoun>:] Class Case[aff]
+OtherPronouns[aff] [<pronoun>:] Class Case[aff]
+# без местных падежей
+
+LEXICON OtherPronouns
+жи[abs]
+эн[2,sg]
+энщу[1,sg]
+энну[1,pl]
+энни[2,pl]
+энш[1,sg,erg] # можно вместо этого твол 
+энд[2,sg,erg] # можно вместо этого твол
+энлълъи[aff]

@@ -1,0 +1,29 @@
+#-----------ADVERBS AND ADJECTIVES-----------
+
+PATTERN AdverbAdjective
+NoClasses > Vowels [<pl>:л]
+ClassInfix > Vowels [<pl>:л]
+ClassPrefix > Vowels [<pl>:л]
+
+PATTERN NoClasses
+AdjNoClassesLex [<adj>:]
+AdvNoClassesLex [<adv>:]
+
+PATTERN ClassPrefix
+Class[1] AdjStem[1] [<adj>:]
+Class[2] AdjStem[2] [<adj>:]
+Class[3] AdjStem[3] [<adj>:]
+Class[4] AdjStem[4] [<adj>:]
+Class[1] AdvStem[1] [<adv>:]
+Class[2] AdvStem[2] [<adv>:]
+Class[3] AdvStem[3] [<adv>:]
+Class[4] AdvStem[4] [<adv>:]
+
+PATTERN ClassInfix
+AdjInStem(1) Class AdjInStem(2) [<adj>:]
+
+LEXICON Class
+<cl>:в[1]
+<cl>:й[2]
+<cl>:б[3]
+<cl>:р[4]

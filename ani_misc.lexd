@@ -1,0 +1,27 @@
+#-----------EVIDENTIALITY-----------
+
+PATTERN Evidentiality
+Evid [<evid>:]
+
+LEXICON Evid # частица мол
+гъодду # из евангелия и Салимова
+лъоди # из кайе
+гъоди # из кайе
+
+
+#-----------CONJUNCTIONS-----------
+
+PATTERN Conjunction
+Conjunctions[-clitic] [<conj>:]
+AbsPl Conjunctions[clitic]
+AbsPl Conjunctions[clitic]
+OblSg Conjunctions[clitic]
+OblPl Conjunctions[clitic]
+
+LEXICON Conjunctions # по салимову
+я # или
+ялъибор # или
+во # и # ?ва
+амма # но
+<conj>:ло[clitic] # и
+<conj>:но[clitic] # и

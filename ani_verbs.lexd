@@ -1,0 +1,139 @@
+# lexd ani_verbs.lexd | hfst-txt2fst -o ani_verbs.lexd.hfst
+# hfst-fst2strings ani_verbs.lexd.hfst
+
+
+PATTERNS
+Verb
+
+#-----------VERBS-----------
+
+PATTERN Verb
+Class Auxilary [<aux>:] > [<perf>:й]
+VerbSynthetic > Evidentiality
+VerbSynthetic
+OralStem
+Imperative
+
+PATTERN VerbSynthetic
+# aorist
+OralStem VM[aor]
+NasalStem VM[aor]
+
+# perfect, also general converb
+OralStem [<perf>:й] 
+NasalStem Consonants[н] [<perf>:ий] 
+
+# present progressive
+OralStem VM[presprogr,oral] (VM[pl])?
+NasalStem VM[presprogr,nasal] (VM[pl])? # надо чтобы в тволе нм -> м
+
+# present habitual !
+Stem(1)[oral] VM[preshab]
+Stem(1)[nasal] ([:инн] | [:унн]) VM[preshab]
+
+# future, also present/habitual participle !
+Stem(1)[oral] VM[fut] (VM[pl])?
+Stem(1)[nasal] ([:инн] | [:унн]) VM[fut] (VM[pl])?
+
+# conditional
+OralStem VM[cond,oral]
+NasalStem VM[cond,nasal] # надо чтобы в тволе нм -> м
+
+# counterfactual
+(OralStem | NasalStem) [<aor>:] VM[ctrf] # aorist
+OralStem [<perf>:й] VM[ctrf] # perfect
+NasalStem Consonants[н] [<perf>:ий] VM[ctrf] # perfect
+
+# concessive
+(OralStem | NasalStem) ([<conc>:боло] | [<conc>:болло])
+
+LEXICON VM # verb marker
+<aor>:[aor]
+<pres.progr>:р[presprogr,oral]
+<pres.progr>:радо[presprogr,oral]
+<pres.progr>:ралло[presprogr,oral]
+<pres.progr>:мадо[presprogr,nasal]
+<pres.progr>:малло[presprogr,nasal]
+<pl>:л[pl]
+<pl>:ил[pl]
+<pres.hab>:о[preshab]
+<fut>:йа[fut]
+<fut>:я[fut]
+<cond>:бор[cond,oral]
+<cond>:мор[cond,nasal]
+<ctrf>:ламдур[ctrf]
+<ctrf>:ламдури[ctrf]
+
+PATTERN OralStem
+Stem(1)[oral] Stem(2)
+Class ClassStem(1)[oral] ClassStem(2)
+Class Vowels ClassVowelStem(1)[oral] ClassVowelStem(2)
+
+PATTERN NasalStem
+Stem(1)[nasal] Stem(2)
+Class ClassStem(1)[nasal] ClassStem(2)
+Class Vowels ClassVowelStem(1)[nasal] ClassVowelStem(2)
+
+LEXICON Stem(2)
+игь[oral] и
+кусд[oral] и
+ичч[oral] и
+бос[nasal] ан
+гьитІ[nasal] он
+
+
+LEXICON ClassVowelStem(2) # класс гласный корень суффикс
+кІв[oral] о
+тІ[oral] у
+х[oral] и
+чч[oral] и
+с[nasal] он
+л[nasal] он
+гъ[nasal] ан
+
+LEXICON ClassStem(2) # класс корень суффикс
+#{е}кк у[oral]  # е - о после в!
+#{е}{т} а[oral]   # е - о после в! д в инфинитиве
+#{е}къащ[oral] и
+
+екк[oral] у  # е - о после в!
+ет[oral] а   # е - о после в! д в инфинитиве
+екъащ[oral] и
+ахолъ[oral] и # double l in inf
+очІ[oral] а
+ерш[oral] о
+
+
+
+PATTERN Imperative
+Stem(1) ([<imp>:о] | [<imp>:он])
+Stem(1)[oral] Stem(2) [<imp>:б] > [<pl>:ул]
+Stem(1)[nasal] Stem(2) [<imp>:м] > [<pl>:ул] # надо чтобы в тволе нм -> м
+
+# optative, jussive
+Stem(1) Stem(2) [<aor>:] [<opt>:до] # for intransitive verbs
+Stem(1) [<imp>:о] [<opt>:до] # for transitive verbs
+
+LEXICON Auxilary
+икІо
+игъи
+
+LEXICON Class
+<cl>:в[1]
+<cl>:й[2]
+<cl>:б[3]
+<cl>:р[4]
+
+LEXICON Vowels
+а
+о
+у
+е
+и
+
+LEXICON Consonants
+гь[х]
+д[д]
+г[г]
+лъ[лъ]
+н[н]
