@@ -3,6 +3,7 @@
 LEXICON NounAbsSgLex
 адам
 иса
+бисси       # unk
 петер
 якъуб
 алкуци
@@ -479,6 +480,7 @@ LEXICON NounAbsSgLex
 LEXICON NounOblSgLex
 адам:адам[1]
 иса:иса[1]
+бисси:бисси[1]      # unk
 петер:петер[1]
 якъуб:якъуб[1]
 алкуци:алкуцу[3]
@@ -1004,6 +1006,7 @@ LEXICON NounOblSgLex
 
 
 LEXICON NounAbsPlLex
+бисси:бисси[л]      # unk
 алкуци:алкуцоби[л]
 анга:ангибо[л]
 анжи:анжи[л]
@@ -1440,6 +1443,7 @@ LEXICON NounAbsPlLex
 
 
 LEXICON NounOblPlLex
+бисси:бисси[1]      #unk
 алкуци:алкуцоби[3]
 анга:ангибо[5]
 анжи:анжибо[4]
