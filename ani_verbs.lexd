@@ -1,5 +1,8 @@
 # lexd ani_verbs.lexd | hfst-txt2fst -o ani_verbs.lexd.hfst
 # hfst-fst2strings ani_verbs.lexd.hfst
+# hfst-twolc new.twol -o new.twol.hfst
+# hfst-compose-intersect ani_verbs.lexd.hfst new.twol.hfst -o new.generator.hfst
+# hfst-fst2strings new.generator.hfst
 
 
 PATTERNS
@@ -8,113 +11,20 @@ Verb
 #-----------VERBS-----------
 
 PATTERN Verb
-Class Auxilary [<aux>:] > [<perf>:й]
-VerbSynthetic > Evidentiality
-VerbSynthetic
-OralStem
-Imperative
+#Class Auxilary [<aux>:] > [<perf>:й]
+NewVerb
 
-PATTERN VerbSynthetic
-# aorist
-OralStem VM[aor]
-NasalStem VM[aor]
+LEXICON Aorist
+#вукъи
+бешду
 
-# perfect, also general converb
-OralStem [<perf>:й] 
-NasalStem Consonants[н] [<perf>:ий] 
+LEXICON Bare
+#вукъ
+бешд
 
-# present progressive
-OralStem VM[presprogr,oral] (VM[pl])?
-NasalStem VM[presprogr,nasal] (VM[pl])? # надо чтобы в тволе нм -> м
+#LEXICON Infinitive
 
-# present habitual !
-Stem(1)[oral] VM[preshab]
-Stem(1)[nasal] ([:инн] | [:унн]) VM[preshab]
-
-# future, also present/habitual participle !
-Stem(1)[oral] VM[fut] (VM[pl])?
-Stem(1)[nasal] ([:инн] | [:унн]) VM[fut] (VM[pl])?
-
-# conditional
-OralStem VM[cond,oral]
-NasalStem VM[cond,nasal] # надо чтобы в тволе нм -> м
-
-# counterfactual
-(OralStem | NasalStem) [<aor>:] VM[ctrf] # aorist
-OralStem [<perf>:й] VM[ctrf] # perfect
-NasalStem Consonants[н] [<perf>:ий] VM[ctrf] # perfect
-
-# concessive
-(OralStem | NasalStem) ([<conc>:боло] | [<conc>:болло])
-
-LEXICON VM # verb marker
-<aor>:[aor]
-<pres.progr>:р[presprogr,oral]
-<pres.progr>:радо[presprogr,oral]
-<pres.progr>:ралло[presprogr,oral]
-<pres.progr>:мадо[presprogr,nasal]
-<pres.progr>:малло[presprogr,nasal]
-<pl>:л[pl]
-<pl>:ил[pl]
-<pres.hab>:о[preshab]
-<fut>:йа[fut]
-<fut>:я[fut]
-<cond>:бор[cond,oral]
-<cond>:мор[cond,nasal]
-<ctrf>:ламдур[ctrf]
-<ctrf>:ламдури[ctrf]
-
-PATTERN OralStem
-Stem(1)[oral] Stem(2)
-Class ClassStem(1)[oral] ClassStem(2)
-Class Vowels ClassVowelStem(1)[oral] ClassVowelStem(2)
-
-PATTERN NasalStem
-Stem(1)[nasal] Stem(2)
-Class ClassStem(1)[nasal] ClassStem(2)
-Class Vowels ClassVowelStem(1)[nasal] ClassVowelStem(2)
-
-LEXICON Stem(2)
-игь[oral] и
-кусд[oral] и
-ичч[oral] и
-бос[nasal] ан
-гьитІ[nasal] он
-
-
-LEXICON ClassVowelStem(2) # класс гласный корень суффикс
-кІв[oral] о
-тІ[oral] у
-х[oral] и
-чч[oral] и
-с[nasal] он
-л[nasal] он
-гъ[nasal] ан
-
-LEXICON ClassStem(2) # класс корень суффикс
-#{е}кк у[oral]  # е - о после в!
-#{е}{т} а[oral]   # е - о после в! д в инфинитиве
-#{е}къащ[oral] и
-
-екк[oral] у  # е - о после в!
-ет[oral] а   # е - о после в! д в инфинитиве
-екъащ[oral] и
-ахолъ[oral] и # double l in inf
-очІ[oral] а
-ерш[oral] о
-
-
-
-PATTERN Imperative
-Stem(1) ([<imp>:о] | [<imp>:он])
-Stem(1)[oral] Stem(2) [<imp>:б] > [<pl>:ул]
-Stem(1)[nasal] Stem(2) [<imp>:м] > [<pl>:ул] # надо чтобы в тволе нм -> м
-
-# optative, jussive
-Stem(1) Stem(2) [<aor>:] [<opt>:до] # for intransitive verbs
-Stem(1) [<imp>:о] [<opt>:до] # for transitive verbs
-
-LEXICON Auxilary
+LEXICON Auxilary # for periphrastic tenses according to kaye
 икІо
 игъи
 
@@ -137,3 +47,112 @@ LEXICON Consonants
 г[г]
 лъ[лъ]
 н[н]
+
+# уберу множественное число но оставлю отрицание, с ним понятно хотя бы
+
+PATTERN NewVerb
+Aorist [<aor>:] Negation?                           # aorist
+Aorist Perfect Negation?                            # perfect
+Aorist PastConverb                                  # past converb
+Aorist PastParticiple                               # past participle
+Aorist Progressive Negation?                        # progressive
+Aorist Progressive PresentConverb                   # present converb
+Aorist Progressive PresentParticiple[a]             # present participle
+Aorist Imperative[a]? OptativeJussive               # optative jusive
+Aorist Imperative[a]                                # imperative
+Aorist Conditional > Concessive                     # conditional and concessive
+Aorist PastParticiple Counterfactual[дур]           # counterfactual
+Aorist Perfect Counterfactual[|[бдур,ламдур]]
+Aorist Counterfactual[ламдур]
+Aorist Masdar                                       # masdar
+
+Bare Imperative[b]                                  # imperative
+Bare Imperative[b] OptativeJussive                  # optative jussive
+Bare Habitual Negation?                             # habitual
+Bare Future                                         # future
+Bare PresentParticiple                              # present participle
+Bare Future Counterfactual[|[бдур,ламдур]]          # counterfactual
+Infinitive                                          # infinitive
+Infinitive Prospective Negation?                    # prospective 
+Infinitive Negation? > Purposive                    # purposive
+
+
+LEXICON Perfect
+<pf>:дду
+<pf>:й
+
+LEXICON PastConverb
+<cvb.pst>:дду
+<cvb.pst>:й
+
+LEXICON PastParticiple
+<part.pst>:б
+<part.pst>:иб
+<part.pst>:м    # заменяет нм -> м в тволе
+
+LEXICON Plural
+<pl>:л
+<pl>:ил
+<pl>:ул
+
+LEXICON Progressive
+<progr>:р
+<progr>:радо
+<progr>:ралло
+<progr>:мадо    # заменяет нм -> м в тволе
+<progr>:малло   # заменяет нм -> м в тволе
+
+LEXICON PresentConverb
+<cvb.prs>:гужа
+
+LEXICON PresentParticiple
+<part.prs>:сси[a]
+<part.prs>:я
+<part.prs>:ия
+<part.prs>:йа
+<part.prs>:ийа
+
+LEXICON OptativeJussive
+<opt>:до
+
+LEXICON Imperative
+<imp>:б[a]
+<imp>:м[a]      # заменяет нм -> м в тволе
+<imp>:о[b]
+<imp>:он[b]
+
+LEXICON Conditional
+<cond>:бо{р}
+<cond>:мо{р}      # ассимиляция нм -> мм
+
+LEXICON Concessive
+<conc>:ло       # рл -> лл или рл -> л
+
+LEXICON Counterfactual
+<ctrf>:дур[дур]
+<ctrf>:бдур[бдур]
+<ctrf>:ламдур[ламдур]
+<ctrf>:ламдури[ламдур]
+
+LEXICON Masdar
+<msd>:р         # рн -> н
+<msd>:ир
+
+LEXICON Habitual
+<hab>:о
+<hab>:е
+
+LEXICON Purposive
+<purp>:рий
+
+LEXICON Future
+<fut>:йа
+<fut>:я
+<fut>:ийа
+<fut>:ия
+
+LEXICON Prospective
+<prsp>:лхъи
+
+LEXICON Negation
+<neg>:ссу
