@@ -2,6 +2,9 @@
 
 PATTERN Evidentiality
 Evid [<evid>:]
+Noun Evid
+Verb Evid
+AdverbAdjective Evid
 
 LEXICON Evid # частица мол
 гъодду # из евангелия и Салимова
@@ -23,5 +26,6 @@ LEXICON Conjunctions # по салимову
 ялъибор # или
 во # и # ?ва
 амма # но
+ссу
 <conj>:ло[clitic] # и
 <conj>:но[clitic] # и

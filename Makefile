@@ -4,9 +4,13 @@
 ani.lexd: $(wildcard ani_*.lexd)
 	cat ani_*.lexd > ani.lexd
 
+ani.twol.hfst: ani.twol
+	hfst-twolc $< -o $@
+
 # generate generator
-andi.generator.hfst: ani.lexd
-	lexd $< | hfst-txt2fst -o $@
+andi.generator.hfst: ani.lexd ani.twol.hfst
+	lexd $< | hfst-txt2fst -o andi_.generator.hfst
+	hfst-compose-intersect andi_.generator.hfst ani.twol.hfst -o $@
 
 # test generator
 test.pass.txt: tests.csv

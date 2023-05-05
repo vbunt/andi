@@ -11,18 +11,9 @@ Verb
 #-----------VERBS-----------
 
 PATTERN Verb
-#Class Auxilary [<aux>:] > [<perf>:й]
+Class Auxilary [<aux>:] > [<perf>:й]
 NewVerb
-
-LEXICON Aorist
-#вукъи
-бешду
-
-LEXICON Bare
-#вукъ
-бешд
-
-#LEXICON Infinitive
+NewVerb Question
 
 LEXICON Auxilary # for periphrastic tenses according to kaye
 икІо
@@ -34,47 +25,60 @@ LEXICON Class
 <cl>:б[3]
 <cl>:р[4]
 
-LEXICON Vowels
-а
-о
-у
-е
-и
+#-----------verbal-stems-----------
 
-LEXICON Consonants
-гь[х]
-д[д]
-г[г]
-лъ[лъ]
-н[н]
+PATTERN Infinitive
+PureInfinitive [<verb>:]
+Class ClassInfinitive [<verb>:]
+Class (SingularVowel | PluralVowel) ClassVowelInfinitive [<verb>:]
 
-# уберу множественное число но оставлю отрицание, с ним понятно хотя бы
+PATTERN Aorist
+PureAorist [<verb>:]
+Class ClassAorist [<verb>:]
+Class (SingularVowel | PluralVowel) ClassVowelAorist [<verb>:]
+
+PATTERN Imperative
+PureImperative [<verb>:]
+Class ClassImperative [<verb>:]
+Class (SingularVowel | PluralVowel) ClassVowelImperative [<verb>:]
+
+LEXICON SingularVowel
+<sg>:у
+<sg>:и
+
+LEXICON PluralVowel
+<pl>:о
+<pl>:а
+
+#-----------verbal-patterns-----------
 
 PATTERN NewVerb
-Aorist [<aor>:] Negation?                           # aorist
-Aorist Perfect Negation?                            # perfect
-Aorist PastConverb                                  # past converb
-Aorist PastParticiple                               # past participle
-Aorist Progressive Negation?                        # progressive
-Aorist Progressive PresentConverb                   # present converb
-Aorist Progressive PresentParticiple[a]             # present participle
-Aorist Imperative[a]? OptativeJussive               # optative jusive
-Aorist Imperative[a]                                # imperative
-Aorist Conditional > Concessive                     # conditional and concessive
-Aorist PastParticiple Counterfactual[дур]           # counterfactual
+
+Infinitive [<inf>:у] Negation?                      # 1 infinitive
+Infinitive [<inf>:у] Negation? Purposive                      # 2 purposive
+Infinitive Habitual Negation?                                # 3 habitual
+Infinitive Future                                   # 4 future
+Infinitive PresentParticiple                        # 5 present participle
+Infinitive [:у] Prospective Negation?                        # 6 prospective 
+
+Aorist [<aor>:] Negation?                                     # 7 aorist
+Aorist Perfect Negation?                                     # 8 perfect
+Aorist Progressive Negation?                                 # 9 progressive
+Aorist Progressive PresentParticiple[a]             # 10 present participle
+Aorist Negation? PastParticiple                               # 11 past participle
+Aorist Progressive Negation? PresentConverb                   # 12 present converb
+Aorist PastConverb                                  # 13 past converb
+Aorist Negation? Conditional                                  # 14 conditional
+Aorist Negation? Concessive                                   # 15 concessive
+Aorist PastParticiple Counterfactual[дур]           # 16 counterfactual
 Aorist Perfect Counterfactual[|[бдур,ламдур]]
 Aorist Counterfactual[ламдур]
-Aorist Masdar                                       # masdar
+Infinitive Future Counterfactual[|[бдур,ламдур]]
+Aorist Negation? Masdar                                       # 20 masdar
 
-Bare Imperative[b]                                  # imperative
-Bare Imperative[b] OptativeJussive                  # optative jussive
-Bare Habitual Negation?                             # habitual
-Bare Future                                         # future
-Bare PresentParticiple                              # present participle
-Bare Future Counterfactual[|[бдур,ламдур]]          # counterfactual
-Infinitive                                          # infinitive
-Infinitive Prospective Negation?                    # prospective 
-Infinitive Negation? > Purposive                    # purposive
+Imperative [<imp>:] Negation?                                # 17 18 imperative
+Imperative [<imp>:] Negation? OptativeJussive                 # 19 optative jussive
+Aorist [<aor>:] Negation? OptativeJussive                     # 19 optative jussive
 
 
 LEXICON Perfect
@@ -115,20 +119,17 @@ LEXICON PresentParticiple
 LEXICON OptativeJussive
 <opt>:до
 
-LEXICON Imperative
-<imp>:б[a]
-<imp>:м[a]      # заменяет нм -> м в тволе
-<imp>:о[b]
-<imp>:он[b]
-
 LEXICON Conditional
-<cond>:бо{р}
-<cond>:мо{р}      # ассимиляция нм -> мм
+<cond>:бор
+<cond>:мор      # ассимиляция нм -> мм
 
 LEXICON Concessive
-<conc>:ло       # рл -> лл или рл -> л
+<conc>:болло
+<conc>:молло    # ассимиляция нм -> мм
+<conc>:боло
+<conc>:моло     # ассимиляция нм -> мм
 
-LEXICON Counterfactual
+LEXICON Counterfactual # в корпусе вообще их почти нет
 <ctrf>:дур[дур]
 <ctrf>:бдур[бдур]
 <ctrf>:ламдур[ламдур]
@@ -156,3 +157,7 @@ LEXICON Prospective
 
 LEXICON Negation
 <neg>:ссу
+
+LEXICON Question
+<q>:ле
+<q>:де

@@ -45,6 +45,7 @@ analysis,form,mustpass,source,page,description
 алкуци<n><obl.sg><in><el>,алкуцуукку,pass,.,.,noun in elative sg
 алкуци<n><abs.pl>,алкуцобил,pass,.,.,noun abs pl
 алкуци<n><obl.pl><erg>,алкуцобиди,pass,.,.,noun erg pl
+алкуци<n><obl.pl><erg>,алкуцобди,pass,.,.,noun erg pl
 алкуци<n><obl.pl><dat>,алкуцобий,pass,.,.,noun dat pl
 алкуци<n><obl.pl><dat>,алкуцобилъу,pass,.,.,noun dat pl
 алкуци<n><obl.pl><dat>,алкуцобилълъий,pass,.,.,noun dat pl
@@ -82,7 +83,7 @@ analysis,form,mustpass,source,page,description
 алкуци<n><obl.pl><loc>,алкуцобихъи,pass,.,.,noun loc essive|lative pl
 алкуци<n><obl.pl><loc><el>,алкуцобихъикку,pass,.,.,noun loc elative pl
 битом<adj>,битом,pass,.,.,adj no class
-<cl>екъуб<adj>,векъуб,pass,.,.,adj class affix
+<cl>екъуб<adj>,вокъуб,pass,.,.,adj class affix
 <cl>екъуб<adj>,йекъуб,pass,.,.,adj class affix
 <cl>екъуб<adj>,бекъуб,pass,.,.,adj class affix
 <cl>екъуб<adj>,рекъуб,pass,.,.,adj class affix
