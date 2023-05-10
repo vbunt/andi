@@ -1,7 +1,8 @@
 #-----------DEMONSRATIVES-----------
 
 PATTERN Demonstrative
-Consonants[х] Vowels (Consonants[н] (Vowels)?)? (Consonants[|[д,г,лъ]] Vowels)? [<demonstrative>:] Class  # лъ вместо л-палка
+Consonants[х] Vowels (Consonants[н] (Vowels)?)? (Consonants[|[л,лъ,г,д]] Vowels)? [<demonstrative>:] Class?  # лъ вместо л-палка
+
 
 LEXICON Vowels
 а
@@ -15,6 +16,7 @@ LEXICON Consonants
 д[д]
 г[г]
 лъ[лъ]
+л[л]
 н[н]
 
 

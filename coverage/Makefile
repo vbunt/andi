@@ -4,7 +4,7 @@ analyser=andi.an.hfstol
 check-coverage-stats: corpus $(analyser) stats
 	@ cd corpus; find * -name "*.txt" -print0 | xargs -0 ../stats ../$(analyser)
 check-coverage-unrecog: corpus $(analyser) unrecog
-	@ find corpus -name "*.txt" -print0 | xargs -0 ./unrecog $(analyser)
+	@ find corpus -name "*.txt" -print0 | xargs -0 ./unrecog $(analyser) > unrecog.txt
 check-coverage: corpus $(analyser) stats unrecog
 	@ echo aggregate coverage:
 	@ (make -s check-coverage-stats; find corpus -name "*.txt" -exec cat {} \; | ./stats -q $(analyser) -) | column -t

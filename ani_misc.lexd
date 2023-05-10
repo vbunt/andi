@@ -1,31 +1,67 @@
-#-----------EVIDENTIALITY-----------
-
-PATTERN Evidentiality
-Evid [<evid>:]
-Noun Evid
-Verb Evid
-AdverbAdjective Evid
-
-LEXICON Evid # частица мол
-гъодду # из евангелия и Салимова
-лъоди # из кайе
-гъоди # из кайе
-
-
 #-----------CONJUNCTIONS-----------
 
 PATTERN Conjunction
-Conjunctions[-clitic] [<conj>:]
-AbsPl Conjunctions[clitic]
-AbsPl Conjunctions[clitic]
-OblSg Conjunctions[clitic]
-OblPl Conjunctions[clitic]
+Independents
+Particles
+(Noun|Numeral|AdverbAdjective|Pronoun|Demonstrative|OtherPronoun|Verb) Particles
 
-LEXICON Conjunctions # по салимову
-я # или
-ялъибор # или
-во # и # ?ва
-амма # но
-ссу
-<conj>:ло[clitic] # и
-<conj>:но[clitic] # и
+LEXICON Independents # по салимову
+<prt>:я             # или
+<prt>:ялъибор       # или
+<prt>:во            # и # ?ва
+<prt>:амма          # но
+<prt>:ссу           # не
+<prt>:реху          # же
+<prt>:гьарим        # обращение
+<prt>:могур
+
+LEXICON Particles
+<evid>:гъодду # из евангелия и Салимова
+<evid>:лъоди # из кайе
+<evid>:гъоди # из кайе
+<conj>:ло   # и
+<conj>:но   # и
+<prt>:гу            # же
+<prt>:гуло
+<prt>:реху
+<prt>:де            # вопросительные частицы
+<prt>:ле
+<prt>:не
+<prt>:гуда
+<prt>:гуле
+<prt>:ди
+<prt>:гъи
+<prt>:дехъен        # сомнение
+<prt>:лехъен
+<prt>:нехъен
+<prt>:ли[v]
+<prt>:зиле[v]          # риторический вопрос
+<prt>:йа[v]            # повторение вопроса
+<prt>:логу[n,p]         # совместность
+<prt>:ногу[n,p]
+<prt>:агья              # утвердительность
+<prt>:бу
+<prt>:гьу
+<prt>:ссуб[n,p]         # отстутствие
+<prt>:тигу[n,p]
+<prt>:гагу              # сравнение
+<prt>:гасси
+<prt>:къгасси
+<prt>:къга              # количество
+<prt>:лакъга[n]         # до 
+<prt>:къгон             # мест направления
+<prt>:ххардду
+<prt>:лоло[n]           # ради
+<prt>:лъо[n]            # должность
+<prt>:гъиб[p,n]         # же
+<prt>:кІоб[p,n]
+<prt>:жа[p,n]
+<prt>:ла[p,n]
+<prt>:на[p,n]
+<prt>:лъи[p,n]          # то
+<prt>:лъиболло[p,n]     # хотя
+<prt>:моло[p]           # неопределенные частицы
+<prt>:боло[p]
+<prt>:вукІоболло[p]
+<prt>:бикъболло[p]
+<prt>:чІчІало[n]       # ради
