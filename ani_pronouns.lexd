@@ -33,6 +33,7 @@ Pronouns[pl] [<pronoun>:] [<gen>:лълъ]
 Pronouns[|[pl,obl]] [<pronoun>:] [<dat>:й]
 # iƛi-ɬu здесь должен быть еще такой паттерн
 Pronouns[|[pl,obl]] [<pronoun>:] Class [<aff>:о]
+Pronouns[|[pl,obl]] [<pronoun>:] Locatives
 
 LEXICON Pronouns # following kaye
 ден[sg] # I

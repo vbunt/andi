@@ -10,7 +10,7 @@ PATTERN AbsSg # абсолютив единственного
 NounAbsSgLex [<n>:] [<abs.sg>:]
 
 PATTERN OblSg # косвенные падежи единственного
-NounOblSgLex [<n>:] [<obl.sg>:] Case[-pl,-gen,-aff]
+NounOblSgLex [<n>:] [<obl.sg>:] (Case[-pl,-gen,-aff] | Locatives)
 GenitiveSg
 AffectiveSg
 
@@ -29,7 +29,7 @@ NounAbsPlLex[ол] [<n>:] AbsPlSuf[ол]
 NounAbsPlLex[лил] [<n>:] AbsPlSuf[лил]
 
 PATTERN OblPl
-NounOblPlLex [<n>:] [<obl.pl>:] Case[-sg,-gen,-aff]
+NounOblPlLex [<n>:] [<obl.pl>:] (Case[-sg,-gen,-aff] | Locatives)
 GenitivePl
 AffectivePl
 
@@ -49,6 +49,8 @@ LEXICON Case
 <gen>:лІол[gen]
 <aff>:о[aff]
 <ins>:хъи
+
+LEXICON Locatives
 <sub>:кьи
 <sub><el>:кьикку
 <sup.ess>:ла
