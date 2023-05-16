@@ -13,7 +13,7 @@ cat "$@" \
   | sed 's@[][/<>]@\\\0@g' \
   | hfst-proc "$t" 2>/dev/null \
   | grep -o '\^[^$]*\$' \
-  | grep '\*' \
+  | grep -v '\*' \
   | sort \
   | uniq -c \
   | sort -n
