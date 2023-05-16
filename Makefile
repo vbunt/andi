@@ -7,11 +7,11 @@ ani.lexd: $(wildcard ani_*.lexd)
 ani.twol.hfst: ani.twol
 	hfst-twolc $< -o $@
 
-brackets.twol.hfst: brackets.twol
-	hfst-twolc $< -o $@
+#brackets.twol.hfst: brackets.twol
+#	hfst-twolc $< -o $@
 
 # generate generator
-andi.generator.hfst: ani.lexd ani.twol.hfst brackets.twol.hfst
+andi.generator.hfst: ani.lexd ani.twol.hfst
 	lexd $< | hfst-txt2fst -o andi_.generator.hfst
 	hfst-compose-intersect andi_.generator.hfst ani.twol.hfst -o $@
 #	hfst-compose-intersect andi_.generator.hfst ani.twol.hfst -o andi__.generator.hfst
@@ -19,7 +19,7 @@ andi.generator.hfst: ani.lexd ani.twol.hfst brackets.twol.hfst
 #	rm andi__.generator.hfst
 	rm andi_.generator.hfst
 	rm ani.twol.hfst
-	rm brackets.twol.hfst
+#	rm brackets.twol.hfst
 
 # test generator
 test.pass.txt: tests.csv
