@@ -1,23 +1,43 @@
 #-----------DEMONSRATIVES-----------
 
 PATTERN Demonstrative
-Consonants[х] Vowels (Consonants[н] (Vowels)?)? (Consonants[|[л,лъ,г,д]] Vowels)? [<demonstrative>:] Class? (Case|Locatives)? # лъ вместо л-палка
+DemonstrativeStem [<demonstrative>:] Class > [<pl>:ул]
+DemonstrativeDoubleStem(1) Class DemonstrativeDoubleStem(2) [<demonstrative>:] Class > [<pl>:ул]
+DemonstrativeStem [<demonstrative>:] DemonstrativeOblique (Case|Locatives)
 
+LEXICON DemonstrativeStem
+гьо
+гьоно
+гье 
+гьене 
+гьеде 
+гьеге 
+гьелъе 
+гьенде 
+гьенеде 
+гьундо 
+гьунго 
+гьунлъо 
+гьунудо 
+гьунуго 
+гьунулъо 
+гьиди 
+гьиги 
+гьилъи 
+гьинди 
+гьинги 
+гьинлъи 
+гьиниди 
+гьиниги 
+гьинилъи 
 
-LEXICON Vowels
-а
-о
-у
-е
-и
+LEXICON DemonstrativeDoubleStem(2)
+гьо о
+гье е
 
-LEXICON Consonants
-гь[х]
-д[д]
-г[г]
-лъ[лъ]
-л[л]
-н[н]
+LEXICON DemonstrativeOblique
+лъи
+щу
 
 
 #-----------PERSONAL PRONOUNS-----------
