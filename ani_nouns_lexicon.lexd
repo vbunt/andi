@@ -1,6 +1,7 @@
 #-----------NOUNS-----------
 
 LEXICON NounAbsSgLex
+ригьи       # время
 адам
 иса
 бисси       # unk
@@ -478,6 +479,7 @@ LEXICON NounAbsSgLex
 
 
 LEXICON NounOblSgLex
+ригьи:ригьи[4]      # время
 адам:адам[1]
 иса:иса[1]
 бисси:бисси[1]      # unk

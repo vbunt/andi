@@ -3,7 +3,7 @@
 ! hfst-fst2strings new.generator.hfst
 
 Alphabet
-  а б г д е и й к л н о с х у ъ р ц I %{р%} %{в%}
+  а б г д е и й к л н о с х у ъ р ц I %{р%} %{в%} %{и%}
 ;
 
 Rules
@@ -17,7 +17,7 @@ Rules
 "н realisation"
 н:м => _ м ;
 
-"и realisation"
+"и realisation at the end of some verbal roots"
 и:0 => _ д ;
 
 "р realisation"
@@ -26,21 +26,15 @@ Rules
 "р realisation"
 р:0 <=> н _ ;
 
-"е after в"
+"е after в in general"
 е:о <=> в _ ;
 
-"нн before й"
+"нн before й in future"
 н:0 <=> н _ й ;
 
-"лл before й"
+"лл before й in future"
 л:0 <=> л _ й ;
 
-"мм before й"
+"мм before й in future"
 м:0 <=> м _ й ;
 
-! так получается два разных аутпута что наверное полезно в других случаях
-"delete brackets"
-%{р%}:р => _ ;
-
-"delete brackets"
-%{в%}:в => _ ;

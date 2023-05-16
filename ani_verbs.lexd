@@ -63,7 +63,7 @@ Infinitive [:у] Prospective                         # 6 prospective
 
 Aorist [<aor>:]                                     # 7 aorist
 Aorist Perfect                                      # 8 perfect
-Aorist Progressive                                  # 9 progressive
+Aorist Progressive [<pl>:л]?                        # 9 progressive
 Aorist Progressive PresentParticiple[a]             # 10 present participle
 Aorist PastParticiple                               # 11 past participle
 Aorist Progressive  PresentConverb                  # 12 present converb
@@ -92,7 +92,7 @@ Infinitive [:у] Prospective [<neg>:ссу]             # 6 prospective
 
 Aorist [<aor>:] [<neg>:ссу]                         # 7 aorist
 Aorist Perfect [<neg>:ссу]                          # 8 perfect
-Aorist Progressive [<neg>:ссу]                      # 9 progressive
+Aorist Progressive [<pl>:л]? [<neg>:ссу]            # 9 progressive
 Aorist Progressive PresentParticiple[a] [<neg>:ссу] # 10 present participle
 Aorist [<neg>:ссу] PastParticiple                   # 11 past participle
 Aorist Progressive [<neg>:ссу] PresentConverb       # 12 present converb
