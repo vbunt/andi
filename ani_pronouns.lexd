@@ -1,3 +1,5 @@
+
+
 #-----------DEMONSRATIVES-----------
 
 PATTERN Demonstrative
@@ -87,4 +89,52 @@ LEXICON OtherPronouns
 энш[1,sg,erg,loc] # можно вместо этого твол 
 энд[2,sg,erg] # можно вместо этого твол
 энлълъи[aff]
+
+#-----------QUESTION PRONOUNS-----------
+
+PATTERN QuestionPronoun
+
+# имгъи кто
+[<pronoun>:] [<abs>:и] PronounClass [<pl>:ол]? [:гъи]
+[<pronoun>:] [<obl>:лълъе] (Case | Locatives) [:гъи]
+[<pronoun>:] [<obl>:ил] (Case | Locatives) [:гъи]
+[<pronoun>:] [<obl>:или] [<pl>:] (Case | Locatives) [:гъи]
+
+# имгагъи
+[<pronoun>:] [<abs>:и] PronounClass [<pl>:ол]? [:га] [:гъи]
+[<pronoun>:] [<obl>:имгаш] (Case[erg] | Locatives) [:гъи]
+
+[<pronoun>:] [<obl>:и] PronounClass [:галд] Case[erg] [:гъи]
+[<pronoun>:] [<obl>:и] PronounClass [<pl>:ол] [:га] ([:лу] | [:ли]) Case[erg] [:гъи]
+
+[<pronoun>:] [<obl>:имгащу] Case[-erg] [:гъи]
+[<pronoun>:] [<obl>:и] PronounClass [:га] ([:л] | [:лу] | [:ли]) (Case[-erg] | Locatives) [:гъи]
+
+# чомгъи
+[<pronoun>:] [<abs>:чом] [<pl>:ул]? [:гъи]
+[<pronoun>:] ([<obl>:чомш] | [<obl>:чомд] | [<obl>:чомили] | [<obl>:чомули]) Case[erg] [:гъи]
+[<pronoun>:] ([<obl>:чомщу] | [<obl>:чом] | [<obl>:чомулу] | [<obl>:чомули]) Case[-erg] [:гъи]
+[<pronoun>:] ([<obl>:чомш] | [<obl>:чом] | [<obl>:чомулу] | [<obl>:чомули]) Locatives [:гъи]
+
+LEXICON PronounClass
+<cl>:м
+<cl>:б
+<cl>:р
+<cl>:й
+
+#-----------EMPHATIC PRONOUNS-----------
+
+PATTERN EmphaticPronoun
+
+[<pronoun>:] [<abs>:жи] Class [:жи] Class
+[<pronoun>:] [<obl>:жи] Class [:жи] Class [:ш] (Case[erg] | Locatives)
+[<pronoun>:] [<obl>:жи] Class [:жи] Class [:щу] Case[-erg]
+[<pronoun>:] [<abs>:жи] Class [:ожи] Class [<pl>:ол]
+[<pronoun>:] [<obl>:жи] Class [:ожи] Class [<pl>:лу] (Case | Locatives)
+
+[<pronoun>:] [<abs>:джиб] [<pl>:ул]? [:гу]
+[<pronoun>:] [<obl>:джибгу] ([:ш]|[:лд]) Case[erg]
+[<pronoun>:] [<obl>:джибгу] ([:щу]|[:л]) (Case[-erg] | Locatives)
+[<pronoun>:] [<obl>:джиб] [<pl>:ул] [:гу] ([:лу]|[:ли]) (Case|Locatives) 
+[<pronoun>:] [<obl>:джиб] [<pl>:ул] ([:о]|[:и]) (Case|Locatives) [:гу]
 
