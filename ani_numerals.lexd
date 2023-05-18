@@ -1,11 +1,26 @@
 # -----------NUMERALS-----------
 
 PATTERN Numeral
+CardinalNumeral
+NumeralCases
+OrdinalNumeral
+DistributiveNumeral
+GroupNumeral
+IndefiniteNumeral
+MultipleNumeral
+FractionNumeral
+
+
+PATTERN CardinalNumeral
 NumRoot[1] [<num>:] Class # 1
-(NumRoot[-1,-4] | (Class NumRoot[4])) [<num>:] [<card>:гу] # 2-10
+NumStem [<card>:гу] # 2-10
 NumRoot[10] [<num>:] [<lnk>:лІи] # -дцать
 (NumRoot[-10,-1,-4] | (Class NumRoot[4])) [<num>:] [<ten>:цІол] [<card>:гу] # round number
 (NumRoot[-10,-1,-4] | (Class NumRoot[4])) [<num>:] [<ten>:цІол] [<lnk>:ло] # round +
+
+PATTERN NumStem
+(NumRoot[-1,-4] | (Class NumRoot[4])) [<num>:]
+
 
 LEXICON NumRoot
 се[1]       # 1
@@ -18,3 +33,65 @@ LEXICON NumRoot
 бийкьи      # 8
 гьочІо      # 9
 гьоцІо[10]  # 10
+
+
+PATTERN NumeralCases
+[<num><abs>:се] Class [<pl>:ул]
+[<num><obl>:се] ([:ш]|[:лд]) Case[erg]
+[<num><obl>:се] ([:щу]|[:л]) Case[-erg]
+[<num><obl>:се] ([:ш]|[:л]) Locatives
+[<num><obl>:се] ([<pl>:лу]|[<pl>:ли]) (Case|Locatives)
+
+NumStem [<ten>:цІол]? [<card>:гу] ([:ш]|[:л]) (Case[erg] | Locatives)
+NumStem [<ten>:цІол]? [<card>:гу] ([:щу]|[:л]) Case[-erg]
+NumStem [<ten>:цІол]? [<card>:гу] ([<pl>:лу]|[<pl>:ли]) (Case | Locatives)
+
+
+PATTERN OrdinalNumeral
+[<num><ord>:лесседусси]
+NumStem OrdinalSuffix
+NumStem OrdinalSuffix[-ssi] > [<pl>:ул]
+NumStem [<ord>:цІулддуссо] [<pl>:л]
+
+NumStem OrdinalSuffix ([:ш]|[:д]) Case[erg]
+NumStem OrdinalSuffix [:щу]? Case[-erg]
+NumStem OrdinalSuffix [:ш]? Locatives
+NumStem ((OrdinalSuffix[-ssi] [<pl>:ул]) | ([<ord>:цІулддуссо] [<pl>:л])) ([:у] | [:и]) (Case | Locatives)
+
+LEXICON OrdinalSuffix
+<ord>:ддоб
+<ord>:лддоб
+<ord>:цІулддусси[ssi]
+
+
+PATTERN DistributiveNumeral
+NumStem NumStem [<card>:гу]
+NumStem NumStem [<card>:гу] ([:ш]|[:л]) (Case[erg] | Locatives)
+NumStem NumStem [<card>:гу] ([:щу]|[:л]) Case[-erg]
+NumStem NumStem [<card>:гу] ([<pl>:лу]|[<pl>:ли]) (Case | Locatives)
+
+
+PATTERN GroupNumeral
+NumStem [<ten>:цІол]? [<group>:лгу]
+NumStem [<ten>:цІол]? [<group>:ле] (Case | Locatives) [<card>:гу]
+
+NumStem [<ten>:цІол]? [<card>:гу] [<group>:ло]
+NumStem [<ten>:цІол]? [<card>:гу] [<group>:ло] ([:ш]|[:лд]) Case[erg]
+NumStem [<ten>:цІол]? [<card>:гу] [<group>:ло] ([:щу]|[:л]) Case[-erg]
+NumStem [<ten>:цІол]? [<card>:гу] [<group>:ло] ([:ш]|[:л]) Locatives
+
+NumStem [<ten>:цІол]? [<card>:гу] [:л] [<group>:ло] [<pl>:л]
+NumStem [<ten>:цІол]? [<card>:гу] [:л] [<group>:ло] ([<pl>:лу]|[<pl>:ли]) (Case|Locatives)
+
+
+PATTERN IndefiniteNumeral
+NumStem [<ten>:цІол]?  
+# они должны быть типа три-четыре без гу
+
+
+PATTERN MultipleNumeral
+NumStem [<ten>:цІол]? [<mult>:цІу] [<card>:гу] 
+
+
+PATTERN FractionNumeral
+NumStem [<ten>:цІол]? [<card>:гул] [<frac>:лІикку]

@@ -3,7 +3,7 @@
 PATTERN Conjunction
 Independents
 Particles
-(Noun|Numeral|AdverbAdjective|Pronoun|Demonstrative|OtherPronoun|Verb) Particles
+(Noun|Numeral|AdverbAdjective|Verb|Pronoun) Particles
 
 LEXICON Independents # по салимову
 <prt>:я             # или
@@ -60,8 +60,8 @@ LEXICON Particles
 <prt>:на[p,n]
 <prt>:лъи[p,n]          # то
 <prt>:лъиболло[p,n]     # хотя
-<prt>:моло[p]           # неопределенные частицы
-<prt>:боло[p]
+<prt>:боло
+<prt>:моло
 <prt>:вукІоболло[p]
 <prt>:бикъболло[p]
 <prt>:чІчІало[n]       # ради
