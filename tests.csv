@@ -14,16 +14,12 @@ analysis,form,mustpass,source,page,description
 алкуци<n><obl.sg><dat>,алкуцулъу,pass,.,.,noun dat sg
 алкуци<n><obl.sg><dat>,алкуцулълъий,pass,.,.,noun dat sg
 има<n><obl.sg><cl><gen>,имувул,pass,.,.,noun gen sg
-има<n><obl.sg><cl><gen>,имувил,pass,.,.,noun gen sg
 има<n><obl.sg><cl><gen>,имув,pass,.,.,noun gen sg
-има<n><obl.sg><cl><gen>,имуйул,pass,.,.,noun gen sg
 има<n><obl.sg><cl><gen>,имуйил,pass,.,.,noun gen sg
 има<n><obl.sg><cl><gen>,имуй,pass,.,.,noun gen sg
 има<n><obl.sg><cl><gen>,имубул,pass,.,.,noun gen sg
-има<n><obl.sg><cl><gen>,имубил,pass,.,.,noun gen sg
 има<n><obl.sg><cl><gen>,имуб,pass,.,.,noun gen sg
 има<n><obl.sg><cl><gen>,имурул,pass,.,.,noun gen sg
-има<n><obl.sg><cl><gen>,имурил,pass,.,.,noun gen sg
 има<n><obl.sg><cl><gen>,имур,pass,.,.,noun gen sg
 алкуци<n><obl.sg><sub><el>,алкуцукьикку,pass,.,.,noun sub elative sg
 алкуци<n><obl.sg><sup.ess>,алкуцула,pass,.,.,noun super essive sg
@@ -57,16 +53,12 @@ analysis,form,mustpass,source,page,description
 алкуци<n><obl.pl><gen>,алкуцобилІи,pass,.,.,noun gen pl
 алкуци<n><obl.pl><gen>,алкуцобилІол,pass,.,.,noun gen pl
 има<n><obl.pl><cl><gen>,имобивул,pass,.,.,noun gen pl
-има<n><obl.pl><cl><gen>,имобивил,pass,.,.,noun gen pl
 има<n><obl.pl><cl><gen>,имобив,pass,.,.,noun gen pl
-има<n><obl.pl><cl><gen>,имобийул,pass,.,.,noun gen pl
 има<n><obl.pl><cl><gen>,имобийил,pass,.,.,noun gen pl
 има<n><obl.pl><cl><gen>,имобий,pass,.,.,noun gen pl
 има<n><obl.pl><cl><gen>,имобибул,pass,.,.,noun gen pl
-има<n><obl.pl><cl><gen>,имобибил,pass,.,.,noun gen pl
 има<n><obl.pl><cl><gen>,имобиб,pass,.,.,noun gen pl
 има<n><obl.pl><cl><gen>,имобирул,pass,.,.,noun gen pl
-има<n><obl.pl><cl><gen>,имобирил,pass,.,.,noun gen pl
 има<n><obl.pl><cl><gen>,имобир,pass,.,.,noun gen pl
 алкуци<n><obl.pl><sub>,алкуцобикьи,pass,.,.,noun sub essive|lative pl
 алкуци<n><obl.pl><sub><el>,алкуцобикьикку,pass,.,.,noun sub elative pl
