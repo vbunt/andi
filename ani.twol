@@ -14,7 +14,7 @@ Rules
 "н realisation"
 н:0 => _ м ;
 
-"н realisation"
+"н realisation in progressive"
 н:м => _ м ;
 
 "и realisation at the end of some verbal roots"
@@ -38,3 +38,5 @@ Rules
 "мм before й in future"
 м:0 <=> м _ й ;
 
+"б after м in indefinite pronoun"
+б:м <=> м _ ;

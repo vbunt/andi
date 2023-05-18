@@ -1,3 +1,13 @@
+#-----------PRONOUNS-----------
+
+PATTERN Pronoun
+Demonstrative
+PersonalPronoun
+ReflexivePronoun
+QuestionPronoun
+EmphaticPronoun
+IndefinitePronoun
+NegativePronoun
 
 
 #-----------DEMONSRATIVES-----------
@@ -44,20 +54,20 @@ LEXICON DemonstrativeOblique
 
 #-----------PERSONAL PRONOUNS-----------
 
-PATTERN Pronoun
-Pronouns[sg,-obl] [<pronoun>:] [<abs>:]
-Pronouns[pl] [<pronoun>:] [<abs>:л] # в грамматике л не отделяется но я решила что так лучше
-Pronouns[sg,-obl] [<pronoun>:] [<erg>:ни]
-Pronouns[pl] [<pronoun>:] [<erg>:ди]
-Pronouns[sg,obl] [<pronoun>:] Class [<gen>:]
-Pronouns[pl] [<pronoun>:] Class [<gen>:]
-Pronouns[pl] [<pronoun>:] [<gen>:лълъ]
-Pronouns[|[pl,obl]] [<pronoun>:] [<dat>:й]
+PATTERN PersonalPronoun
+PersonalPronouns[sg,-obl] [<pronoun>:] [<abs>:]
+PersonalPronouns[pl] [<pronoun>:] [<abs>:л] # в грамматике л не отделяется но я решила что так лучше
+PersonalPronouns[sg,-obl] [<pronoun>:] [<erg>:ни]
+PersonalPronouns[pl] [<pronoun>:] [<erg>:ди]
+PersonalPronouns[sg,obl] [<pronoun>:] Class [<gen>:]
+PersonalPronouns[pl] [<pronoun>:] Class [<gen>:]
+PersonalPronouns[pl] [<pronoun>:] [<gen>:лълъ]
+PersonalPronouns[|[pl,obl]] [<pronoun>:] [<dat>:й]
 # iƛi-ɬu здесь должен быть еще такой паттерн
-Pronouns[|[pl,obl]] [<pronoun>:] Class [<aff>:о]
-Pronouns[|[pl,obl]] [<pronoun>:] Locatives
+PersonalPronouns[|[pl,obl]] [<pronoun>:] Class [<aff>:о]
+PersonalPronouns[|[pl,obl]] [<pronoun>:] Locatives
 
-LEXICON Pronouns # following kaye
+LEXICON PersonalPronouns # following kaye
 ден[sg] # I
 мен[sg] # you sg
 бисси[pl] # you pl
@@ -67,20 +77,20 @@ LEXICON Pronouns # following kaye
 ду[sg,obl] # you sg
 
 
-#-----------OTHER PRONOUNS-----------
+#-----------REFLEXIVE PRONOUNS-----------
 
-PATTERN OtherPronoun # kaye + салимов
-Pronoun [<int>:гу]
-OtherPronouns[abs] [<pronoun>:] Class [<abs>:] > [<pl>:ол]
-OtherPronouns[|[erg,pl]] [<pronoun>:] Case[erg]
-OtherPronouns[1,-erg] [<pronoun>:] Class [<gen>:] > [<pl>:ул]
-OtherPronouns[2,-erg] [<pronoun>:] Case[gen]
-OtherPronouns[-abs,-erg] [<pronoun>:] Case[dat]
-OtherPronouns[-abs,-erg] [<pronoun>:] Class Case[aff]
-OtherPronouns[aff] [<pronoun>:] Class Case[aff]
-OtherPronouns[loc] [<pronoun>:] Locatives
+PATTERN ReflexivePronoun # kaye + салимов
+PersonalPronoun [<int>:гу]
+ReflexivePronouns[abs] [<pronoun>:] Class [<abs>:] > [<pl>:ол]
+ReflexivePronouns[|[erg,pl]] [<pronoun>:] Case[erg]
+ReflexivePronouns[1,-erg] [<pronoun>:] Class [<gen>:] > [<pl>:ул]
+ReflexivePronouns[2,-erg] [<pronoun>:] Case[gen]
+ReflexivePronouns[-abs,-erg] [<pronoun>:] Case[dat]
+ReflexivePronouns[-abs,-erg] [<pronoun>:] Class Case[aff]
+ReflexivePronouns[aff] [<pronoun>:] Class Case[aff]
+ReflexivePronouns[loc] [<pronoun>:] Locatives
 
-LEXICON OtherPronouns
+LEXICON ReflexivePronouns
 жи[abs]
 эн[2,sg,loc]
 энщу[1,sg]
@@ -138,3 +148,38 @@ PATTERN EmphaticPronoun
 [<pronoun>:] [<obl>:джиб] [<pl>:ул] [:гу] ([:лу]|[:ли]) (Case|Locatives) 
 [<pronoun>:] [<obl>:джиб] [<pl>:ул] ([:о]|[:и]) (Case|Locatives) [:гу]
 
+#-----------INDEFINITE PRONOUNS-----------
+
+PATTERN IndefinitePronoun
+
+# иммоло
+[<pronoun>:] [<abs>:и] PronounClass [<indef>:боло]
+[<pronoun>:] [<obl>:и] PronounClass [<indef>:боло] ([:ш] | [:лд]) Case[erg]
+[<pronoun>:] [<obl>:и] PronounClass [<indef>:боло] ([:щу] | [:л]) Case[-erg]
+[<pronoun>:] [<obl>:и] PronounClass [<indef>:боло] ([:ш] | [:л]) Locatives
+
+# имолболо
+[<pronoun>:] [<abs>:и] PronounClass [<pl>:ол] [<indef>:боло]
+[<pronoun>:] [<obl>:и] PronounClass [<pl>:ол] [<indef>:боло] ([:лу] | [:ли]) (Case | Locatives)
+
+# икьолссиболосси
+[<pronoun>:] [<abs>:икьолсси] [<indef>:боло] [:сси]
+[<pronoun>:] [<obl>:икьолсси] [<indef>:боло] [:сси] ([:ш] | [:лд]) Case[erg]
+[<pronoun>:] [<obl>:икьолсси] [<indef>:боло] [:сси] ([:щу] | [:л]) Case[-erg]
+[<pronoun>:] [<obl>:икьолсси] [<indef>:боло] [:сси] ([:ш] | [:л]) Locatives
+
+# икьолссолболоссол
+[<pronoun>:] [<abs>:икьолсс] [<pl>:ол] [<indef>:боло] [:сс] [<pl>:ол]
+[<pronoun>:] [<obl>:икьолсс] [<pl>:ол] [<indef>:боло] [:сс] [<pl>:ол] ([:у] | [:и]) (Case | Locatives)
+[<pronoun>:] [<obl>:икьолсс] [<pl>:ол] [<indef>:боло] [:сса] (Case | Locatives)
+
+#-----------NEGATIVE PRONOUNS-----------
+
+PATTERN NegativePronoun
+[<pronoun>:] [<abs>:се] PronounClass [:гуло]
+[<pronoun>:] [<obl>:се] PronounClass [:гуло] ([:ш] | [:лд]) Case[erg]
+[<pronoun>:] [<obl>:се] PronounClass [:гуло] ([:щу] | [:л]) Case[-erg]
+[<pronoun>:] [<obl>:се] PronounClass [:гуло] ([:ш] | [:л]) Locatives
+
+[<pronoun>:] [<abs>:се] PronounClass [<pl>:ул] [:гулл] ([:ол] | [:ал]) 
+[<pronoun>:] [<obl>:се] PronounClass [<pl>:ул] [:гуллол] ([:у] | [:и]) (Case | Locatives) 
