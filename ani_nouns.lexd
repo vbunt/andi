@@ -11,15 +11,8 @@ NounAbsSgLex [<n>:] [<abs.sg>:]
 
 PATTERN OblSg # косвенные падежи единственного
 NounOblSgLex [<n>:] [<obl.sg>:] (Case[-pl] | Locatives)
-GenitiveSg
-#AffectiveSg
-
-PATTERN GenitiveSg # генитив единственного
-#NounOblSgLex[1] [<n>:] [<obl.sg>:] Class Gen
-NounOblSgLex[-1] [<n>:] [<obl.sg>:] Case[gen]
-
-#PATTERN AffectiveSg # аффектив единственного
-#NounOblSgLex [<n>:] [<obl.sg>:] Class Case[aff]
+NounOblSgLex[1] [<n>:] [<obl.sg>:] Case[gen,cl]
+NounOblSgLex[-1] [<n>:] [<obl.sg>:] Case[gen,-cl]
 
 PATTERN AbsPl
 NounAbsPlLex[л] [<n>:] AbsPlSuf[л]
@@ -30,15 +23,9 @@ NounAbsPlLex[лил] [<n>:] AbsPlSuf[лил]
 
 PATTERN OblPl
 NounOblPlLex [<n>:] [<obl.pl>:] (Case[-sg] | Locatives)
-GenitivePl
-#AffectivePl
+NounOblPlLex[1] [<n>:] [<obl.pl>:] Case[gen,cl]
+NounOblPlLex[-1] [<n>:] [<obl.pl>:] Case[gen,-cl]
 
-PATTERN GenitivePl # генитив множественного
-#NounOblPlLex[1] [<n>:] [<obl.pl>:] Class Gen
-NounOblPlLex[-1] [<n>:] [<obl.pl>:] Case[gen]
-
-#PATTERN AffectivePl # аффектив множественного
-#NounOblPlLex [<n>:] [<obl.pl>:] Class Case[aff]
 
 LEXICON Case
 <erg>:ди[erg]
@@ -47,14 +34,14 @@ LEXICON Case
 <dat>:лълъий[dat]
 <gen>:лІи[gen]
 <gen>:лІол[gen]
-<cl><gen>:в[gen]
-<cl><gen>:й[gen]
-<cl><gen>:б[gen]
-<cl><gen>:р[gen]
-<cl><gen>:вул[gen]
-<cl><gen>:йил[gen]
-<cl><gen>:бул[gen]
-<cl><gen>:рул[gen]
+<cl><gen>:в[gen,cl]
+<cl><gen>:й[gen,cl]
+<cl><gen>:б[gen,cl]
+<cl><gen>:р[gen,cl]
+<cl><gen>:вул[gen,cl]
+<cl><gen>:йил[gen,cl]
+<cl><gen>:бул[gen,cl]
+<cl><gen>:рул[gen,cl]
 <cl><aff>:во[aff]
 <cl><aff>:йо[aff]
 <cl><aff>:бо[aff]
@@ -93,14 +80,8 @@ LEXICON AbsPlSuf
 <abs.pl>:ол[ол]
 <abs.pl>:лил[лил]
 
-LEXICON Gen
-<gen>:ул
-<gen>:ил
-<gen>:
-
 LEXICON Class
 <cl>:в[1]
 <cl>:й[2]
 <cl>:б[3]
 <cl>:р[4]
-
