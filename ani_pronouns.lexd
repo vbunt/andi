@@ -183,3 +183,4 @@ PATTERN NegativePronoun
 
 [<pronoun>:] [<abs>:се] PronounClass [<pl>:ул] [:гулл] ([:ол] | [:ал]) 
 [<pronoun>:] [<obl>:се] PronounClass [<pl>:ул] [:гуллол] ([:у] | [:и]) (Case | Locatives) 
+
