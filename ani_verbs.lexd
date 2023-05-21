@@ -96,7 +96,7 @@ Aorist Progressive [<pl>:л]? [<neg>:ссу]            # 9 progressive
 Aorist Progressive PresentParticiple[a] [<neg>:ссу] # 10 present participle
 Aorist [<neg>:ссу] PastParticiple                   # 11 past participle
 Aorist Progressive [<neg>:ссу] PresentConverb       # 12 present converb
-Aorist [<cvb.pst><neg>:чIигу]                       # 13 past converb
+Aorist [<cvb.pst><neg>:чІигу]                       # 13 past converb
 Aorist [<neg>:ссу] Conditional                      # 14 conditional
 Aorist [<neg>:ссу] Concessive                       # 15 concessive
 Aorist [<neg>:ссу] PastParticiple Counterfactual[дур]   # 16 counterfactual
@@ -140,8 +140,8 @@ LEXICON PresentConverb
 
 LEXICON PresentParticiple
 <part.prs>:сси[a]
-<part.prs>:я
-<part.prs>:ия
+#<part.prs>:я
+#<part.prs>:ия
 <part.prs>:йа
 <part.prs>:ийа
 
@@ -177,9 +177,9 @@ LEXICON Purposive
 
 LEXICON Future
 <fut>:йа
-<fut>:я
+#<fut>:я
 <fut>:ийа
-<fut>:ия
+#<fut>:ия
 
 LEXICON Prospective
 <prsp>:лхъи

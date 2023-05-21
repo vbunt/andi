@@ -7,19 +7,25 @@ ani.lexd: $(wildcard ani_*.lexd)
 ani.twol.hfst: ani.twol
 	hfst-twolc $< -o $@
 
-#brackets.twol.hfst: brackets.twol
-#	hfst-twolc $< -o $@
+# to get rid of { } for twol. not used here but does exist
+brackets.twol.hfst: brackets.twol
+	hfst-twolc $< -o $@
+
+# for letter variants: я/йа, лІ/лълъ, І/1/I/i
+var.transliterator.hfst: variants
+	hfst-strings2fst -j variants -o var.hfst
+	hfst-repeat -f 1 var.hfst -o var.transliterator.hfst
+	rm var.hfst
 
 # generate generator
-andi.generator.hfst: ani.lexd ani.twol.hfst
+andi.generator.hfst: ani.lexd ani.twol.hfst var.transliterator.hfst
 	lexd $< | hfst-txt2fst -o andi_.generator.hfst
-	hfst-compose-intersect andi_.generator.hfst ani.twol.hfst -o $@
-#	hfst-compose-intersect andi_.generator.hfst ani.twol.hfst -o andi__.generator.hfst
-#	hfst-compose andi__.generator.hfst brackets.twol.hfst -o $@
-#	rm andi__.generator.hfst
+	hfst-compose-intersect andi_.generator.hfst ani.twol.hfst -o andi__.generator.hfst
+	hfst-compose andi__.generator.hfst var.transliterator.hfst -o $@
+	rm andi__.generator.hfst
 	rm andi_.generator.hfst
 	rm ani.twol.hfst
-#	rm brackets.twol.hfst
+	rm var.transliterator.hfst
 
 # test generator
 test.pass.txt: tests.csv

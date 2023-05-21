@@ -6,8 +6,12 @@ Particles
 (Noun|Numeral|AdverbAdjective|Verb|Pronoun) Particles
 
 LEXICON Independents # по салимову
-<prt>:я             # или
-<prt>:ялъибор       # или
+#<prt>:я             # или
+#<prt>:яльи         # или
+#<prt>:ялъибор       # или
+<prt>:йа             # или
+<prt>:йальи         # или
+<prt>:йалъибор       # или
 <prt>:во            # и # ?ва
 <prt>:амма          # но
 <prt>:ссу           # не
@@ -39,7 +43,8 @@ LEXICON Particles
 <prt>:йа[v]            # повторение вопроса
 <prt>:логу[n,p]         # совместность
 <prt>:ногу[n,p]
-<prt>:агья              # утвердительность
+#<prt>:агья              # утвердительность
+<prt>:агьйа              # утвердительность
 <prt>:бу
 <prt>:гьу
 <prt>:ссуб[n,p]         # отстутствие
