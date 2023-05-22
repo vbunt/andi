@@ -21,7 +21,10 @@ Rules
 и:0 => _ д ;
 
 "р realisation"
-%{р%}:0 <=> _ л ;
+р:0 => _ л ;
+
+"р realisation"
+р:л => _ л ;
 
 "р realisation"
 р:0 <=> н _ ;

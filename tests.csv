@@ -203,8 +203,8 @@ analysis,form,mustpass,source,page,description
 бусуду<verb><part.pst><ctrf>,бусумдур,pass,.,.,.
 бусуду<verb><cvb.pst>,бусудду,pass,.,.,.
 бусуду<verb><cvb.pst>,бусуй,pass,.,.,.
-бусуду<verb><cond>,бусубор,pass,.,.,.
-бусуду<verb><cond>,бусумор,pass,.,.,.
+бусуду<verb><aor><cond>,бусубор,pass,.,.,.
+бусуду<verb><aor><cond>,бусумор,pass,.,.,.
 бусуду<verb><conc>,бусуболо,pass,.,.,.
 бусуду<verb><conc>,бусуболло,pass,.,.,.
 бусуду<verb><conc>,бусумоло,pass,.,.,.
@@ -324,3 +324,5 @@ analysis,form,mustpass,source,page,description
 лІеру<adv>,лiеру,pass,.,.,.
 лІеру<adv>,лIеру,pass,.,.,.
 лІеру<adv>,лълъеру,pass,.,.,.
+а<cl>лъин<adj>,аллъин,pass,.,.,.
+а<cl>лъин<adj>,алъин,pass,.,.,.

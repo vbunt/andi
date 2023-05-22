@@ -68,7 +68,7 @@ Aorist Progressive PresentParticiple[a]             # 10 present participle
 Aorist PastParticiple                               # 11 past participle
 Aorist Progressive  PresentConverb                  # 12 present converb
 Aorist PastConverb                                  # 13 past converb
-Aorist Conditional                                  # 14 conditional
+Aorist [<aor>:] Conditional                         # 14 conditional
 Aorist Concessive                                   # 15 concessive
 Aorist PastParticiple Counterfactual[дур]           # 16 counterfactual
 Aorist Perfect Counterfactual[|[бдур,ламдур]]
