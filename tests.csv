@@ -40,40 +40,61 @@ analysis,form,mustpass,source,page,description
 алкуци<n><obl.sg><in>,алкуцуу,pass,.,.,noun in essive|lative sg
 алкуци<n><obl.sg><in><el>,алкуцуукку,pass,.,.,noun in elative sg
 алкуци<n><abs.pl>,алкуцобил,pass,.,.,noun abs pl
-алкуци<n><obl.pl><erg>,алкуцобиди,pass,.,.,noun erg pl
-алкуци<n><obl.pl><erg>,алкуцобди,pass,.,.,noun erg pl
-алкуци<n><obl.pl><dat>,алкуцобий,pass,.,.,noun dat pl
-алкуци<n><obl.pl><dat>,алкуцобилъу,pass,.,.,noun dat pl
-алкуци<n><obl.pl><dat>,алкуцобилълъий,pass,.,.,noun dat pl
-алкуци<n><obl.pl><ins>,алкуцобихъи,pass,.,.,noun ins pl
-алкуци<n><obl.pl><cl><aff>,алкуцобиво,pass,.,.,noun aff pl
-алкуци<n><obl.pl><cl><aff>,алкуцобийо,pass,.,.,noun aff pl
-алкуци<n><obl.pl><cl><aff>,алкуцобибо,pass,.,.,noun aff pl
-алкуци<n><obl.pl><cl><aff>,алкуцобиро,pass,.,.,noun aff pl
-алкуци<n><obl.pl><gen>,алкуцобилІи,pass,.,.,noun gen pl
-алкуци<n><obl.pl><gen>,алкуцобилІол,pass,.,.,noun gen pl
-има<n><obl.pl><cl><gen>,имобивул,pass,.,.,noun gen pl
-има<n><obl.pl><cl><gen>,имобив,pass,.,.,noun gen pl
-има<n><obl.pl><cl><gen>,имобийил,pass,.,.,noun gen pl
-има<n><obl.pl><cl><gen>,имобий,pass,.,.,noun gen pl
-има<n><obl.pl><cl><gen>,имобибул,pass,.,.,noun gen pl
-има<n><obl.pl><cl><gen>,имобиб,pass,.,.,noun gen pl
-има<n><obl.pl><cl><gen>,имобирул,pass,.,.,noun gen pl
-има<n><obl.pl><cl><gen>,имобир,pass,.,.,noun gen pl
-алкуци<n><obl.pl><sub>,алкуцобикьи,pass,.,.,noun sub essive|lative pl
-алкуци<n><obl.pl><sub><el>,алкуцобикьикку,pass,.,.,noun sub elative pl
-алкуци<n><obl.pl><sup.ess>,алкуцобила,pass,.,.,noun super essive pl
-алкуци<n><obl.pl><sup.lat>,алкуцобило,pass,.,.,noun super lative pl
-алкуци<n><obl.pl><sup><el>,алкуцобилакку,pass,.,.,noun super elative pl
-алкуци<n><obl.pl><inter>,алкуцобилІи,pass,.,.,noun inter essive|lative pl
-алкуци<n><obl.pl><inter><el>,алкуцобилІикку,pass,.,.,noun inter elative pl
-алкуци<n><obl.pl><apud.ess>,алкуцобиха,pass,.,.,noun apud essive pl
-алкуци<n><obl.pl><apud.lat>,алкуцобихо,pass,.,.,noun apud lative pl
-алкуци<n><obl.pl><apud><el>,алкуцобихакку,pass,.,.,noun apus elative pl
-алкуци<n><obl.pl><cont>,алкуцобичІу,pass,.,.,noun cont essive|lative pl
-алкуци<n><obl.pl><cont><el>,алкуцобичІукку,pass,.,.,noun cont elative pl
-алкуци<n><obl.pl><loc>,алкуцобихъи,pass,.,.,noun loc essive|lative pl
-алкуци<n><obl.pl><loc><el>,алкуцобихъикку,pass,.,.,noun loc elative pl
+алкуци<n><obl.pl><apud><el>,алкуцобахакку,pass,.,.,
+алкуци<n><obl.pl><apud.ess>,алкуцобаха,pass,.,.,
+алкуци<n><obl.pl><apud.lat>,алкуцобахо,pass,.,.,
+алкуци<n><obl.pl><cl><aff>,алкуцобабо,pass,.,.,
+алкуци<n><obl.pl><cl><aff>,алкуцобаво,pass,.,.,
+алкуци<n><obl.pl><cl><aff>,алкуцобайо,pass,.,.,
+алкуци<n><obl.pl><cl><aff>,алкуцобаро,pass,.,.,
+алкуци<n><obl.pl><cont><el>,алкуцобач1укку,pass,.,.,
+алкуци<n><obl.pl><cont><el>,алкуцобачiукку,pass,.,.,
+алкуци<n><obl.pl><cont><el>,алкуцобачIукку,pass,.,.,
+алкуци<n><obl.pl><cont><el>,алкуцобачІукку,pass,.,.,
+алкуци<n><obl.pl><cont>,алкуцобач1у,pass,.,.,
+алкуци<n><obl.pl><cont>,алкуцобачiу,pass,.,.,
+алкуци<n><obl.pl><cont>,алкуцобачIу,pass,.,.,
+алкуци<n><obl.pl><cont>,алкуцобачІу,pass,.,.,
+алкуци<n><obl.pl><dat>,алкуцобай,pass,.,.,
+алкуци<n><obl.pl><dat>,алкуцобалълъий,pass,.,.,
+алкуци<n><obl.pl><dat>,алкуцобалъу,pass,.,.,
+алкуци<n><obl.pl><erg>,алкуцобади,pass,.,.,
+алкуци<n><obl.pl><gen>,алкуцобал1и,pass,.,.,
+алкуци<n><obl.pl><gen>,алкуцобал1ол,pass,.,.,
+алкуци<n><obl.pl><gen>,алкуцобалiи,pass,.,.,
+алкуци<n><obl.pl><gen>,алкуцобалIи,pass,.,.,
+алкуци<n><obl.pl><gen>,алкуцобалiол,pass,.,.,
+алкуци<n><obl.pl><gen>,алкуцобалIол,pass,.,.,
+алкуци<n><obl.pl><gen>,алкуцобалІи,pass,.,.,
+алкуци<n><obl.pl><gen>,алкуцобалІол,pass,.,.,
+алкуци<n><obl.pl><gen>,алкуцобалълъи,pass,.,.,
+алкуци<n><obl.pl><gen>,алкуцобалълъол,pass,.,.,
+алкуци<n><obl.pl><ins>,алкуцобахъи,pass,.,.,
+алкуци<n><obl.pl><inter><el>,алкуцобал1икку,pass,.,.,
+алкуци<n><obl.pl><inter><el>,алкуцобалiикку,pass,.,.,
+алкуци<n><obl.pl><inter><el>,алкуцобалIикку,pass,.,.,
+алкуци<n><obl.pl><inter><el>,алкуцобалІикку,pass,.,.,
+алкуци<n><obl.pl><inter><el>,алкуцобалълъикку,pass,.,.,
+алкуци<n><obl.pl><inter>,алкуцобал1и,pass,.,.,
+алкуци<n><obl.pl><inter>,алкуцобалiи,pass,.,.,
+алкуци<n><obl.pl><inter>,алкуцобалIи,pass,.,.,
+алкуци<n><obl.pl><inter>,алкуцобалІи,pass,.,.,
+алкуци<n><obl.pl><inter>,алкуцобалълъи,pass,.,.,
+алкуци<n><obl.pl><loc><el>,алкуцобахъикку,pass,.,.,
+алкуци<n><obl.pl><loc>,алкуцобахъи,pass,.,.,
+алкуци<n><obl.pl><sub><el>,алкуцобакьикку,pass,.,.,
+алкуци<n><obl.pl><sub>,алкуцобакьи,pass,.,.,
+алкуци<n><obl.pl><sup><el>,алкуцобалакку,pass,.,.,
+алкуци<n><obl.pl><sup.ess>,алкуцобала,pass,.,.,
+алкуци<n><obl.pl><sup.lat>,алкуцобало,pass,.,.,
+има<n><obl.pl><cl><gen>,имобилиб,pass,.,.,
+има<n><obl.pl><cl><gen>,имобилибул,pass,.,.,
+има<n><obl.pl><cl><gen>,имобилив,pass,.,.,
+има<n><obl.pl><cl><gen>,имобиливул,pass,.,.,
+има<n><obl.pl><cl><gen>,имобилий,pass,.,.,
+има<n><obl.pl><cl><gen>,имобилийил,pass,.,.,
+има<n><obl.pl><cl><gen>,имобилир,pass,.,.,
+има<n><obl.pl><cl><gen>,имобилирул,pass,.,.,
 битом<adj>,битом,pass,.,.,adj no class
 <cl>екъуб<adj>,вокъуб,pass,.,.,adj class affix
 <cl>екъуб<adj>,йекъуб,pass,.,.,adj class affix
@@ -257,28 +278,6 @@ analysis,form,mustpass,source,page,description
 <cl>окъго<num><ten><lnk>,рокъгоц1олло,pass,.,.,.
 <cl>окъго<num><ten><lnk>,рокъгоцiолло,pass,.,.,.
 <cl>окъго<num><ten><lnk>,рокъгоцIолло,pass,.,.,.
-алкуци<n><obl.pl><cont><el>,алкуцобич1укку,pass,.,.,.
-алкуци<n><obl.pl><cont><el>,алкуцобичiукку,pass,.,.,.
-алкуци<n><obl.pl><cont><el>,алкуцобичIукку,pass,.,.,.
-алкуци<n><obl.pl><cont>,алкуцобич1у,pass,.,.,.
-алкуци<n><obl.pl><cont>,алкуцобичiу,pass,.,.,.
-алкуци<n><obl.pl><cont>,алкуцобичIу,pass,.,.,.
-алкуци<n><obl.pl><gen>,алкуцобил1и,pass,.,.,.
-алкуци<n><obl.pl><gen>,алкуцобил1ол,pass,.,.,.
-алкуци<n><obl.pl><gen>,алкуцобилiи,pass,.,.,.
-алкуци<n><obl.pl><gen>,алкуцобилIи,pass,.,.,.
-алкуци<n><obl.pl><gen>,алкуцобилiол,pass,.,.,.
-алкуци<n><obl.pl><gen>,алкуцобилIол,pass,.,.,.
-алкуци<n><obl.pl><gen>,алкуцобилълъи,pass,.,.,.
-алкуци<n><obl.pl><gen>,алкуцобилълъол,pass,.,.,.
-алкуци<n><obl.pl><inter><el>,алкуцобил1икку,pass,.,.,.
-алкуци<n><obl.pl><inter><el>,алкуцобилiикку,pass,.,.,.
-алкуци<n><obl.pl><inter><el>,алкуцобилIикку,pass,.,.,.
-алкуци<n><obl.pl><inter><el>,алкуцобилълъикку,pass,.,.,.
-алкуци<n><obl.pl><inter>,алкуцобил1и,pass,.,.,.
-алкуци<n><obl.pl><inter>,алкуцобилiи,pass,.,.,.
-алкуци<n><obl.pl><inter>,алкуцобилIи,pass,.,.,.
-алкуци<n><obl.pl><inter>,алкуцобилълъи,pass,.,.,.
 алкуци<n><obl.sg><cont><el>,алкуцуч1укку,pass,.,.,.
 алкуци<n><obl.sg><cont><el>,алкуцучiукку,pass,.,.,.
 алкуци<n><obl.sg><cont><el>,алкуцучIукку,pass,.,.,.
