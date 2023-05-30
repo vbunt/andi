@@ -1,9 +1,5 @@
-! hfst-twolc new.twol -o new.twol.hfst
-! hfst-compose-intersect new.lexd.hfst new.twol.hfst -o new.generator.hfst
-! hfst-fst2strings new.generator.hfst
-
 Alphabet
-  а б г д е и й к л н о с х у ъ р ц I %{р%} %{в%} %{и%}
+  а б г д е и й к л н о с х у ъ р ц I
 ;
 
 Rules
@@ -26,7 +22,7 @@ Rules
 "р realisation"
 р:л => _ л ;
 
-"р realisation"
+"р realisation in masdars"
 р:0 <=> н _ ;
 
 "е after в in general"

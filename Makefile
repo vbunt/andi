@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := andi.analyzer.hfstol
 
-# 
+# join .lexd files into one
 ani.lexd: $(wildcard ani_*.lexd)
 	cat ani_*.lexd > ani.lexd
 

@@ -4,7 +4,7 @@ PATTERN Pronoun
 Demonstrative
 PersonalPronoun
 ReflexivePronoun
-QuestionPronoun     # interrogative
+QuestionPronoun         # interrogative
 EmphaticPronoun
 IndefinitePronoun
 NegativePronoun
@@ -56,30 +56,29 @@ LEXICON DemonstrativeOblique
 
 PATTERN PersonalPronoun
 PersonalPronouns[sg,-obl] [<pronoun>:] [<abs>:]
-PersonalPronouns[pl] [<pronoun>:] [<abs>:л] # в грамматике л не отделяется но я решила что так лучше
+PersonalPronouns[pl] [<pronoun>:] [<abs>:л]
 PersonalPronouns[sg,-obl] [<pronoun>:] [<erg>:ни]
 PersonalPronouns[pl] [<pronoun>:] [<erg>:ди]
 PersonalPronouns[sg,obl] [<pronoun>:] Class [<gen>:]
 PersonalPronouns[pl] [<pronoun>:] Class [<gen>:]
 PersonalPronouns[pl] [<pronoun>:] [<gen>:лълъ]
 PersonalPronouns[|[pl,obl]] [<pronoun>:] [<dat>:й]
-# iƛi-ɬu здесь должен быть еще такой паттерн
 PersonalPronouns[|[pl,obl]] [<pronoun>:] Class [<aff>:о]
 PersonalPronouns[|[pl,obl]] [<pronoun>:] Locatives
 
 LEXICON PersonalPronouns # following kaye
-ден[sg] # I
-мен[sg] # you sg
-бисси[pl] # you pl
-ищи[pl] # we excl
-илІи[pl] # we incl
-ди[sg,obl] # I
-ду[sg,obl] # you sg
+ден[sg]                 # I
+мен[sg]                 # you sg
+бисси[pl]               # you pl
+ищи[pl]                 # we excl
+илІи[pl]                # we incl
+ди[sg,obl]              # I
+ду[sg,obl]              # you sg
 
 
 #-----------REFLEXIVE PRONOUNS-----------
 
-PATTERN ReflexivePronoun # kaye + салимов
+PATTERN ReflexivePronoun
 PersonalPronoun [<int>:гу]
 ReflexivePronouns[abs] [<pronoun>:] Class [<abs>:] > [<pl>:ол]
 ReflexivePronouns[|[erg,pl]] [<pronoun>:] Case[erg]
@@ -96,15 +95,15 @@ LEXICON ReflexivePronouns
 энщу[1,sg]
 энну[1,pl,loc]
 энни[2,pl,loc]
-энш[1,sg,erg,loc] # можно вместо этого твол 
-энд[2,sg,erg] # можно вместо этого твол
+энш[1,sg,erg,loc] 
+энд[2,sg,erg] 
 энлълъи[aff]
 
 #-----------QUESTION PRONOUNS-----------
 
 PATTERN QuestionPronoun
 
-# имгъи кто
+# имгъи
 [<pronoun>:] [<abs>:и] PronounClass [<pl>:ол]? [:гъи]
 [<pronoun>:] [<obl>:лълъе] (Case | Locatives) [:гъи]
 [<pronoun>:] [<obl>:ил] (Case | Locatives) [:гъи]

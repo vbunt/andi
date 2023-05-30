@@ -12,11 +12,11 @@ FractionNumeral
 
 
 PATTERN CardinalNumeral
-NumRoot[1] [<num>:] Class # 1
-NumStem [<card>:гу] # 2-10
-NumRoot[10] [<num>:] [<lnk>:лІи] # -дцать
-(NumRoot[-10,-1,-4] | (Class NumRoot[4])) [<num>:] [<ten>:цІол] [<card>:гу] # round number
-(NumRoot[-10,-1,-4] | (Class NumRoot[4])) [<num>:] [<ten>:цІол] [<lnk>:ло] # round +
+NumRoot[1] [<num>:] Class           # 1
+NumStem [<card>:гу]                 # 2-10
+NumRoot[10] [<num>:] [<lnk>:лІи]    # -teen
+(NumRoot[-10,-1,-4] | (Class NumRoot[4])) [<num>:] [<ten>:цІол] [<card>:гу]     # round number
+(NumRoot[-10,-1,-4] | (Class NumRoot[4])) [<num>:] [<ten>:цІол] [<lnk>:ло]      # round +
 
 PATTERN NumStem
 (NumRoot[-1,-4] | (Class NumRoot[4])) [<num>:]

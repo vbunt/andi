@@ -6,10 +6,10 @@ AbsPl
 OblSg
 OblPl
 
-PATTERN AbsSg # абсолютив единственного
+PATTERN AbsSg
 NounAbsSgLex [<n>:] [<abs.sg>:]
 
-PATTERN OblSg # косвенные падежи единственного
+PATTERN OblSg
 NounOblSgLex [<n>:] [<obl.sg>:] (Case[-pl] | Locatives)
 NounOblSgLex[1] [<n>:] [<obl.sg>:] Case[gen,cl]
 NounOblSgLex[-1] [<n>:] [<obl.sg>:] Case[gen,-cl]
