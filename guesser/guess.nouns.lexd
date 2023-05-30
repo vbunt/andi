@@ -1,0 +1,70 @@
+#-----------NOUNS-----------
+
+PATTERN Noun
+
+NounAbsSgLex [<n>:] [<abs.sg>:] DeclType[n] Particles
+
+NounOblSgLex [<n>:] DeclType[n] [<obl.sg>:] (Case[-pl] | Locatives) > Particles
+NounOblSgLex[1] [<n>:] DeclType[n] [<obl.sg>:] Case[gen,cl] > Particles
+NounOblSgLex[-1] [<n>:] DeclType[n] [<obl.sg>:] Case[gen,-cl] > Particles
+
+NounAbsPlLex [<n>:] DeclType[n] AbsPlSuf > Particles
+
+NounOblPlLex [<n>:] DeclType[n] [<obl.pl>:] (Case[-sg] | Locatives) > Particles
+NounOblPlLex[1] [<n>:] DeclType[n] [<obl.pl>:] Case[gen,cl] > Particles
+NounOblPlLex[-1] [<n>:] DeclType[n] [<obl.pl>:] Case[gen,-cl] > Particles
+
+
+LEXICON Case
+<erg>:ди[erg]
+<dat>:й[dat]
+<dat>:лъу[dat]
+<dat>:лълъий[dat]
+<gen>:лІи[gen]
+<gen>:лІол[gen]
+<cl><gen>:в[gen,cl]
+<cl><gen>:й[gen,cl]
+<cl><gen>:б[gen,cl]
+<cl><gen>:р[gen,cl]
+<cl><gen>:вул[gen,cl]
+<cl><gen>:йил[gen,cl]
+<cl><gen>:бул[gen,cl]
+<cl><gen>:рул[gen,cl]
+<cl><aff>:во[aff]
+<cl><aff>:йо[aff]
+<cl><aff>:бо[aff]
+<cl><aff>:ро[aff]
+<ins>:хъи
+
+LEXICON Locatives
+<sub>:кьи
+<sub><el>:кьикку
+<sup.ess>:ла
+<sup.lat>:ло
+<sup><el>:лакку
+<in.ess>:ла[sg]
+<ess>:у[sg]
+<in.lat>:ло[sg]
+<lat>:ди[sg]
+<in><el>:лакку[sg]
+<inter>:лІи
+<inter><el>:лІикку
+<apud.ess>:ха
+<apud.lat>:хо
+<apud><el>:хакку
+<cont>:чІу
+<cont><el>:чІукку
+<loc>:хъи[pl]
+<loc>:хъи[pl]
+<loc><el>:хъикку[pl]
+<in>:у[sg]
+<in>:у[sg]
+<in><el>:укку[sg]
+
+LEXICON AbsPlSuf
+<abs.pl>:л[л]
+<abs.pl>:ил[ил]
+<abs.pl>:ул[ул]
+<abs.pl>:ол[ол]
+<abs.pl>:лил[лил]
+

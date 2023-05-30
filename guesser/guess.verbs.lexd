@@ -1,0 +1,138 @@
+PATTERNS
+Verb
+Noun
+
+LEXICON DeclType
+<TypeVerb>:[v]
+<TypeNoun>:[n]
+
+#-----------VERBS-----------
+
+LEXICON Class
+<cl>:в[1]
+<cl>:й[2]
+<cl>:б[3]
+<cl>:р[4]
+
+#-----------verbal-stems-----------
+
+PATTERN Infinitive
+PureInfinitive
+
+PATTERN Aorist
+PureAorist
+
+PATTERN Imperative
+PureImperative
+
+LEXICON SingularVowel
+<sg>:у
+<sg>:и
+
+LEXICON PluralVowel
+<pl>:о
+<pl>:а
+
+#-----------verbal-patterns-----------
+
+PATTERN Verb
+Infinitive [<verb>:] DeclType[v] InfinititiveSuffixes > Particles
+Aorist [<verb>:] [<aor>:] DeclType[v] Particles
+Aorist [<verb>:] DeclType[v] AoristSuffixes > Particles
+Imperative [<verb>:] DeclType[v] [<imp>:] Particles
+Imperative [<verb>:] DeclType[v] [<imp>:] OptativeJussive > Particles
+
+PATTERN InfinititiveSuffixes
+[<inf>:у]
+[<inf>:у] Purposive
+Habitual
+Future
+PresentParticiple
+[:у] Prospective
+Future Counterfactual[|[бдур,ламдур]]
+
+PATTERN AoristSuffixes
+Perfect
+Progressive
+Progressive PresentParticiple[a]
+PastParticiple
+Progressive PresentConverb
+PastConverb
+[<aor>:] Conditional
+Concessive
+PastParticiple Counterfactual[дур]
+Perfect Counterfactual[|[бдур,ламдур]]
+[<aor>:] Counterfactual[ламдур]
+[<aor>:] OptativeJussive
+
+LEXICON Perfect
+<pf>:дду
+<pf>:й
+
+LEXICON PastConverb
+<cvb.pst>:дду
+<cvb.pst>:й
+
+LEXICON PastParticiple
+<part.pst>:б
+<part.pst>:иб
+<part.pst>:м    # заменяет нм -> м в тволе
+
+#LEXICON Plural
+#<pl>:л
+#<pl>:ил
+#<pl>:ул
+
+LEXICON Progressive
+<progr>:р
+<progr>:радо
+<progr>:ралло
+<progr>:мадо    # заменяет нм -> м в тволе
+<progr>:малло   # заменяет нм -> м в тволе
+
+LEXICON PresentConverb
+<cvb.prs>:гужа
+
+LEXICON PresentParticiple
+<part.prs>:сси[a]
+<part.prs>:я
+<part.prs>:ия
+<part.prs>:йа
+<part.prs>:ийа
+
+LEXICON OptativeJussive
+<opt>:до
+
+LEXICON Conditional
+<cond>:бор
+<cond>:мор      # ассимиляция нм -> мм
+
+LEXICON Concessive
+<conc>:болло
+<conc>:молло    # ассимиляция нм -> мм
+<conc>:боло
+<conc>:моло     # ассимиляция нм -> мм
+
+LEXICON Counterfactual 
+<ctrf>:дур[дур]
+<ctrf>:бдур[бдур]
+<ctrf>:ламдур[ламдур]
+<ctrf>:ламдури[ламдур]
+
+
+LEXICON Habitual
+<hab>:о
+<hab>:е
+
+LEXICON Purposive
+<purp>:рий
+
+LEXICON Future
+<fut>:йа
+<fut>:я
+<fut>:ийа
+<fut>:ия
+
+LEXICON Prospective
+<prsp>:лхъи
+
